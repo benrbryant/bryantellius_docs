@@ -1,0 +1,14 @@
+{
+  "name": "javascript-testing-best-practices",
+  "version": "1.0.0",
+  "description": "Notes and practice testing JS with jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ben Bryant",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
