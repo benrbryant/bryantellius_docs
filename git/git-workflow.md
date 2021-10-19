@@ -20,3 +20,7 @@ Once you've made a few commits, it's important to update your remote branch. Use
 You can remove file(s) from the staging area (tracked files) with `git rm <files> [--cached]`. A great example would be if you staged/tracked a file that should be included in your `.gitignore` file.
 
 You can move a file(s) with `git mv <oldpath> <newpath>`. However, since Git will still read this as a removed and added file, you can also use `git rm <oldpath> && git add <newpath>` to perform the same effect.
+
+## Sources
+
+- [Git Handbook](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
