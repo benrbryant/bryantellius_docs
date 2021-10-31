@@ -30,3 +30,9 @@ Structured Data Types
 - Declaration keywords `var` (function scoped), `let` and `const` (block scoped) are used to declare variables
 - Functions are 'procedures', or sets of statements that can be executed with a single function call
 - Functions are first class citizens in JS, meaning we can treat them as we treat any other value (assign to variables, pass as parameters, return as values...)
+- Loose equality allows for _coercive equality_, enabling type coercion before comparison
+- Strict equality disables type coercion from _identity equality_
+- JS programs can be organized between data/behavior relationships
+  - Classes defined a structure for data (properties) and behaviors (methods)
+- _Module Factories_ are functions that contain a private (local) scope with declarations, and return an object with exposed properties and methods
+- ES modules are different (newer) in that instead of a function coupled with instantiation, the entire file is assumed a module, and `import` / `export` syntax is used
