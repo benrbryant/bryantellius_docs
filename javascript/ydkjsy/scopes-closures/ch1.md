@@ -2,7 +2,7 @@
 
 Scope determines the visibility of values in our programs. They handle where variables are defined, and where they can be accessed.
 
-JS is classified as an interpreted programming language, yet it closer to compilation when you open the hood of the JS engines.
+JS is classified as an interpreted programming language, yet it's closer to compilation when you open the hood of the JS engines.
 
 Code Compilation works in three basic ways:
 
