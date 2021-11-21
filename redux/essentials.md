@@ -18,3 +18,43 @@ You should use Redux if you need to use data in **many** parts of your applicati
 2. Action, typically `setSomething()`
 3. View, typically `<div>{something}</div>`
 
+## Redux Terminology
+
+- **Action**: An object with `type: feature/action` and `payload: value` properties
+- **Action Creator**: A function that takes in a payload, and returns an action object
+- **Reducers**: Functions that take in the current state and action object as parameters, and updates state immutably
+- **Store**: Redux state is contained in a store object, that is passed a reducer
+
+```js
+import { configureStore } from "@reduxjs/toolkit";
+
+const store = configureStore({ reducer: counterReducer });
+
+console.log(store.getState());
+// {value: 0}
+```
+
+- **Dispatch**: Redux stores have a `.dispatch()` method that are passed an action object to trigger state changes
+
+```js
+const increment = () => {
+  return {
+    type: "counter/increment",
+  };
+};
+
+store.dispatch(increment());
+
+console.log(store.getState());
+// {value: 2}
+```
+
+- **Selectors**: Functions that take a state (store) parameter to return a specific piece of state
+
+```js
+const selectCounterValue = (state) => state.value;
+
+const currentValue = selectCounterValue(store.getState());
+console.log(currentValue);
+// 2
+```
