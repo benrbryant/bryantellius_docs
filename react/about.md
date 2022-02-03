@@ -1,5 +1,16 @@
 # About React; Using React
 
+Table of Contents
+
+- [About React](#about-react)
+- [CRA tool](#create-react-app-tool)
+- [JSX](#jsx)
+- [Components](#components)
+  - [Class Components](#class-components)
+  - [Functional Components](#functional-components)
+
+## About React
+
 **React** is "a JavaScript library for building user interfaces"
 
 The ReactDOM takes react elements (written as JSX expressions or objects) and creates a _virtual DOM_ to mimic, or shadow 😉, the real DOM. It manages all components renders and updates.

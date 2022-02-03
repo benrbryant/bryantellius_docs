@@ -6,24 +6,25 @@ Developer Notes on topics listed on [Kamran Ahmed's excellent roadmap react reso
 
 ### Fundamental Topics
 
-[About React; Using React](about.md)
+- [About React](about.md#about-react)
+- [`create-react-app` tool](about.md#create-react-app-tool)
+- [JSX](about.md#jsx)
+- [Components](about.md#components)
+  - [Class](about.md#class-components)
+  - [Functional](about.md#functional-components)
 
-- `create-react-app` tool
-- JSX
-- Components
-  - Class
-  - Functional
+Full Section notes at [About React; Using React](about.md)
 
-[Props and State](props-state.md)
+- [Props vs State](props-state.md#props-vs-state)
+- [Basic Hooks](props-state.md#basic-hooks---usestate-and-useeffect)
+  - [`useState`](props-state.md#state-hook)
+  - [`useEffect`](props-state.md#effect-hook)
+- [Conditional Rendering](props-state.md#conditional-rendering)
+- [Component Lifecycle](props-state.md#component-lifecycle-and-methods)
+- [Lists and Keys](props-state.md#list-and-keys)
+- [Composition vs Inheritence](props-state.md#composition-vs-inheritence)
 
-- Props vs State
-- Conditional Rendering
-- Component Lifecycle
-- Lists and Keys
-- Composition vs Inheritence
-- Basic Hooks
-  - `useState`
-  - `useEffect`
+Full Section notes at [Props and State](props-state.md)
 
 ### Advanced Topics
 
