@@ -28,15 +28,18 @@ Full Section notes at [Props and State](props-state.md)
 
 ### Advanced Topics
 
-- Hooks
-  - Your own hooks
-  - Custom Hooks
+- [Context](state-management.md#context)
+- [Hooks](state-management.md#hooks)
+  - [Custom Hooks](state-management.md#custom-hooks)
+  - [Additional Hooks](state-management.md#additional-hooks)
+    - [`useContext`](state-management.md#usecontext)
+    - [`useReducer`](state-management.md#usereducer)
     - `useCallback`
     - `useRef`
     - `useMemo`
-    - `useReducer`
-    - `useContext`
-- Context
+
+Full Section notes at [State Management](state-management.md)
+
 - Refs
 - Render Props
 - Higher Order Components
