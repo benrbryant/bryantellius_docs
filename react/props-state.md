@@ -11,6 +11,7 @@ Table of Contents
 - [Component Lifecycle](#component-lifecycle-and-methods)
 - [Lists and Keys](#list-and-keys)
 - [Composition and Inheritence](#composition-vs-inheritence)
+- [Sources](#sources)
 
 ## Props
 
@@ -226,4 +227,4 @@ Using component composition in this way, you may not need to ever use class inhe
 
 ## Sources
 
-[reactjs.org/docs/](https://reactjs.org/docs/)
+[reactjs.org/docs/](https://reactjs.org/docs/components-and-props.html)

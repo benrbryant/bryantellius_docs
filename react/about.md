@@ -8,6 +8,7 @@ Table of Contents
 - [Components](#components)
   - [Class Components](#class-components)
   - [Functional Components](#functional-components)
+- [Sources](#sources)
 
 ## About React
 

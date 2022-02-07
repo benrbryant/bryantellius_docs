@@ -29,23 +29,26 @@ Full Section notes at [Props and State](props-state.md)
 ### Advanced Topics
 
 - [Context](state-management.md#context)
-- [Hooks](state-management.md#hooks)
-  - [Custom Hooks](state-management.md#custom-hooks)
-  - [Additional Hooks](state-management.md#additional-hooks)
-    - [`useContext`](state-management.md#usecontext)
-    - [`useReducer`](state-management.md#usereducer)
-    - `useCallback`
-    - `useRef`
-    - `useMemo`
-
-Full Section notes at [State Management](state-management.md)
-
 - Refs
 - Render Props
 - Higher Order Components
 - Portals
 - Error Boundaries
 - Fiber Architecture
+
+Full Section notes at [State Management](state-management.md)
+
+- [Hooks](hooks.md#hooks)
+  - [Custom Hooks](hooks.md#custom-hooks)
+  - [Additional Hooks](hooks.md#additional-hooks)
+    - [`useContext`](hooks.md#usecontext)
+    - [`useReducer`](hooks.md#usereducer)
+    - [`useMemo`](hooks.md#usememo)
+    - [`useCallback`](hooks.md#usecallback)
+    - [`useRef`](hooks.md#useref)
+
+Full Section notes at [Hooks](hooks.md)
+
 
 ### Ecosystem
 
