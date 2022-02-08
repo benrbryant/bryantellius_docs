@@ -54,26 +54,33 @@ Full Section notes at [Hooks](hooks.md)
 
 ### Ecosystem
 
+The following subjects are good to know, but not a priority for needing to use _all_ of them. There will a basic overview on each topic, with several sections expanded to in-depth notes later on.
+
 - Routers
   - React Router
   - Reach Router
+- State Management
+  - Context/State
+  - Redux
+  - MobX
+- Data Fetching
+  - API Calls
+    - GraphQL
+      - Apollo
+      - Relay Modern
+    - RESTful
+      - Axios
+      - Unfetch
+      - superagent
+  - use-http
+  - react-query
+- Mobile
+  - React Native
 - SSR
   - Next.js
 - SSG
   - Next.js
   - Gatsby
-- API Calls
-  - GraphQL
-    - Apollo
-    - Relay Modern
-  - RESTful
-    - Axios
-    - Unfetch
-    - superagent
-- use-http
-- react-query
-- Mobile
-  - React Native
 - Forms
   - React Hook Form
   - Formik
@@ -82,10 +89,6 @@ Full Section notes at [Hooks](hooks.md)
   - Jest
   - React Testing Library
   - Cypress
-- State Management
-  - Context/State
-  - Redux
-  - MobX
 - Styling
   - Chakra UI
   - Material UI
