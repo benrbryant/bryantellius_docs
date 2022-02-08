@@ -29,12 +29,15 @@ Full Section notes at [Props and State](props-state.md)
 ### Advanced Topics
 
 - [Context](state-management.md#context)
-- Refs
-- Render Props
-- Higher Order Components
-- Portals
-- Error Boundaries
-- Fiber Architecture
+- [Refs](state-management.md#refs)
+- [Render Props](state-management.md#render-props)
+- [Higher Order Components](state-management.md#higher-order-components)
+- [Portals](state-management.md#portals)
+  - [Event Bubbling and Portals](state-management.md#event-bubbling-and-portals)
+- [Error Boundaries](state-management.md#error-boundaries)
+- [Fiber Architecture](state-management.md#fiber-architecture)
+  - [Reconciliation](state-management.md#reconciliation)
+  - [React Fiber](state-management.md#react-fiber)
 
 Full Section notes at [State Management](state-management.md)
 
@@ -48,7 +51,6 @@ Full Section notes at [State Management](state-management.md)
     - [`useRef`](hooks.md#useref)
 
 Full Section notes at [Hooks](hooks.md)
-
 
 ### Ecosystem
 
