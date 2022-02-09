@@ -10,7 +10,7 @@ Table of Contents
 - Javascript
 - [React](react/README.md)
 - Redux
-- React Native
+- [React Native](react-native/README.md)
 - Jest
 - Node
 - MongoDB
