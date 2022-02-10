@@ -256,7 +256,9 @@ class Locations {
   }
 
   findFurthest() {
-    let sortedTBs = this.list.sort((a, b) => (Number(a.x) + Number(a.y)) - (Number(b.x) + Number(b.y)));
+    let sortedTBs = this.list.sort(
+      (a, b) => Number(a.x) + Number(a.y) - (Number(b.x) + Number(b.y))
+    );
     return {
       a: sortedTBs[0],
       b: sortedTBs[sortedTBs.length - 1],
