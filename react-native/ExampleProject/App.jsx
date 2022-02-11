@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -7,6 +8,7 @@ import {
   ScrollView,
   FlatList,
   Image,
+  TextInput,
 } from "react-native";
 
 const testList = [
@@ -39,21 +41,20 @@ const Item = ({ item }) => (
 );
 
 export default function App() {
+  const [value, setValue] = useState("");
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
         <Text style={{ fontSize: 32, textAlign: "center" }}>
           React Native with Expo! {"\n"}✅
         </Text>
-        <Text style={styles.regularText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Text>
+        <TextInput
+          onChangeText={(value) => setText(value)}
+          placeholder={"Type something!"}
+          defaultValue={value}
+        />
+        <Text style={styles.regularText}>{value}</Text>
         <View style={styles.row}>
           <Text style={styles.textLight}>Top View</Text>
         </View>

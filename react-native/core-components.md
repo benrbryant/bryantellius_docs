@@ -123,6 +123,23 @@ const Item = ({ item }) => (
 
 ## TextInput
 
+A **TextInput** component is used for taking user input. It receives a `onChangeText` prop (callback function for when the input changes) and an `onSubmitEditing` prop (callback function for when text is submitted).
+
+TextInput's also have `keyboardType` prop (determines the mobile keyboard used for data inputs), `multiline` prop (boolean), `numberOfLines` prop, and `value` prop (for controlled inputs).
+
+Example:
+
+```jsx
+const [value, setValue] = useState("");
+
+<TextInput
+  onChangeText={(value) => setText(value)}
+  placeholder={"Type something!"}
+  defaultValue={value}
+/>
+<Text style={styles.regularText}>{value}</Text>
+```
+
 ## StyleSheets
 
 **StyleSheets** are supported for most core components. You can pass an object with specified styles to the `StyleSheet.create({})` method which returns an object that you can pass to component `style` props.
