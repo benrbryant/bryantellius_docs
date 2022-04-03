@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to top left, #222,rgb(68, 0, 114));
+}
+
+#glCanvas {
+    max-width: 600px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}

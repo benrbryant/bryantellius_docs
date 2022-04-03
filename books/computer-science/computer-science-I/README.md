@@ -33,3 +33,4 @@ Some languages support _arbitrary precision_ format for numbers where more memor
 Text characters are encoded and assigned numbers to represent their value. The _American Standard Code for Information Interchange_, or ASCII, uses 8 bits (1 byte) to assign decimal numbers to characters. For example, 'A' is 65, 'B' is 66, 'b' is 98, etc. The limitation to ASCII, since it was developed in the 60s, is that it can only represent 256 values with 8 bits.
 
 Today, we use Unicode encoding, most commonly UTF-8, which can represent 1,112,064 total values and is backwards compatible to support ASCII.
+
