@@ -266,6 +266,18 @@ class Locations {
   }
 }
 
-let locations = new Locations();
-locations.parseCSV(points);
-console.log(locations.findFurthest());
+// let locations = new Locations();
+// locations.parseCSV(points);
+// console.log(locations.findFurthest());
+
+// Experiment with File watching
+
+const { watch } = require("fs");
+
+watch(
+  "./books/computer-science/computer-science-I/README.md",
+  (eventType, filename) => {
+    console.log(eventType);
+    console.log(filename);
+  }
+);
