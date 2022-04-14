@@ -16,6 +16,7 @@ Table of Contents
 - MongoDB
 - Python
 - VSCode
+- [Go](go/README.md)
 
 ...
 
