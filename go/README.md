@@ -5,7 +5,7 @@
 ## Topics
 
 - [Tutorial: Getting started](getting-started.md)
-- Tutorial: Create a module
+- [Tutorial: Create a module](creating-a-module.md)
 - Tutorial: Getting started with multi-module workspaces
 - Tutorial: Developing a RESTful API with Go and Gin
 - Tutorial: Getting started with generics
