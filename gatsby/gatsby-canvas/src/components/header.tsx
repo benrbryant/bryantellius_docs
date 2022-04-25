@@ -3,9 +3,12 @@ import { Link } from "gatsby";
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className="columns-3">
+      <div>
+        <span>Logo</span>
+      </div>
       <nav>
-        <ul>
+        <ul className="flex justify-around">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -17,6 +20,14 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
+      <div>
+        <input
+          type="search"
+          name="siteSearch"
+          id="siteSearch"
+          placeholder="Search 🔍"
+        />
+      </div>
     </header>
   );
 };
