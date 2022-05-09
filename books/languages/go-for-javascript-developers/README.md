@@ -8,10 +8,10 @@ Written By Maor Zamski and Daniel Singer
 
 - [Internals](internals.md)
 - [Concurrency and Parallelism](concurrency-and-parellelism.md)
-- [Modules and Packages]()
-- [Error Handling]()
-- [Keywords and Syntax Comparison]()
-- [Types]()
+- [Modules and Packages](modules-packages.md)
+- [Error Handling](error-handling.md)
+- [Keywords and Syntax Comparison](keywords-and-syntax-comparison.md)
+- [Types](types.md)
 - [Flow Control Statements]()
 - [Functions]()
 
