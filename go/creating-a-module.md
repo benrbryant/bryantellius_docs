@@ -22,4 +22,4 @@ func Add(num1 int, num2 int) int {
 }
 ```
 
-A function with a capitalized name is know as an _exported name_, and can be referenced/called in another package/file.
+A function with a capitalized name is known as an _exported name_, and can be referenced/called in another package/file.

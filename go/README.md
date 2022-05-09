@@ -1,5 +1,6 @@
 # Go Learning
 
+[Go Download](https://go.dev/dl/)
 [Tutorial Source](https://go.dev/doc/)
 
 ## Topics
