@@ -6,6 +6,16 @@
 - [Garbage Collection](#garbage-collection)
 - [Compilation](#compilation)
 
+## Prerequisite Definitions
+
+**Heap**: space in computer main storage (memory) that is used to by a program process to store _global_ data; dynamic size and hierarchy structure
+
+**Stack**: space in computer storage (memory) that is used by a program process to store _temporary, local_ data; fixed size and linear structure
+
+**Garbage Collection**: tool used for managing program memory allocation; different programming languages with vary in how they handle GC
+
+[Read the referenced article on Garbage Collection](https://www.freecodecamp.org/news/a-guide-to-garbage-collection-in-programming/)
+
 ## Heap/Stack Memory Allocation
 
 > Simlar to JS
