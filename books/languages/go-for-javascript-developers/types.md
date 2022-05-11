@@ -102,6 +102,30 @@ If a slice grows larger than it's backed array, a new array is created to back t
 
 ## Dictionaries
 
+> Different from JS
 
+Go has one data type dedicated to _dictionaries_: `Map`.
+
+A _map_ is a reference type, and is used to store data in key-value pairs.
+
+```go
+hobbit := map[string]string {
+    "name": "Frodo"
+}
+
+fmt.Println(hobbit["name"]) // "Frodo"
+```
+
+Map values must be accessed with _bracket notation_.
+
+The `ok` value can be used to check if a value exists (opposed to receiving a _zeroed value_ after reference).
+
+```go
+name, ok := hobbit["name"] // "Frodo", true
+```
 
 ## Sets
+
+> Different from JS
+
+Go does not have a supported _Set_ data type. Use _Map_ instead.

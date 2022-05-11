@@ -12,8 +12,8 @@ Written By Maor Zamski and Daniel Singer
 - [Error Handling](error-handling.md)
 - [Keywords and Syntax Comparison](keywords-and-syntax-comparison.md)
 - [Types](types.md)
-- [Flow Control Statements]()
-- [Functions]()
+- [Flow Control Statements](flow-control-statements.md)
+- [Functions](functions.md)
 
 ## Writing Code
 
