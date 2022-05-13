@@ -1,5 +1,7 @@
 # Effective Go
 
+[Book Source](https://go.dev/doc/effective_go)
+
 ## Table of Contents
 
 - [Introduction](introduction.md)
