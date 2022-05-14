@@ -6,14 +6,15 @@
 
 - [Introduction](introduction.md)
   - [Examples](introduction.md#examples)
-- Formatting
-- Commentary
-- Names
-  - Package names
-  - Getters
-  - Interface names
-  - MixedCaps
-- Semicolons
+- [Syntax](syntax.md)
+  - [Formatting](syntax.md#formatting)
+  - [Commentary](syntax.md#commentary)
+  - [Names](syntax.md#names)
+    - Package names
+    - Getters
+    - Interface names
+    - MixedCaps
+  - Semicolons
 - Control structures
   - If
   - Redeclaration and reassignment

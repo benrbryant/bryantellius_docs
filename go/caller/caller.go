@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"bryantellius.com/practice"
+	"fmt"
 )
 
 func main() {
