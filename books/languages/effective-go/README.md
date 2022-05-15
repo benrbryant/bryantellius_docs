@@ -10,17 +10,17 @@
   - [Formatting](syntax.md#formatting)
   - [Commentary](syntax.md#commentary)
   - [Names](syntax.md#names)
-    - Package names
-    - Getters
-    - Interface names
-    - MixedCaps
-  - Semicolons
-- Control structures
-  - If
-  - Redeclaration and reassignment
-  - For
-  - Switch
-  - Type switch
+    - [Package names](syntax.md#package-names)
+    - [Getters](syntax.md#getters)
+    - [Interface names](syntax.md#interface-names)
+    - [MixedCaps](syntax.md#mixedcaps)
+  - [Semicolons](syntax.md#semicolons)
+- [Control structures](control-structures.md)
+  - [If](control-structures.md#if)
+  - [Redeclaration and reassignment](control-structures.md#redeclaration-and-assignment)
+  - [For](control-structures.md#for)
+  - [Switch](control-structures.md#switch)
+  - [Type switch](control-structures.md#type-switch)
 - Functions
   - Multiple return values
   - Named result parameters

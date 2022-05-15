@@ -9,21 +9,26 @@ func Add(num1 int, num2 int) string {
 	return sum
 }
 
+// Sub returns a string of the subtraction result.
 func Sub(num1 int, num2 int) string {
 	res := formatResultMessage("The result is %v", num1-num2)
 	return res
 }
 
+// Mult returns a string of the product result.
 func Mult(num1 int, num2 int) string {
 	res := formatResultMessage("The result is %v", num1*num2)
 	return res
 }
 
+// Div returns a string of the division result.
 func Div(num1 int, num2 int) string {
 	res := formatResultMessage("The result is %v", num1/num2)
 	return res
 }
 
+// formatResultMessage returns a string
+// with the message and arithmetic result combined
 func formatResultMessage(msg string, res int) string {
 	format := fmt.Sprintf(msg, res)
 	return format
