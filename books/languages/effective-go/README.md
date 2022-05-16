@@ -21,20 +21,20 @@
   - [For](control-structures.md#for)
   - [Switch](control-structures.md#switch)
   - [Type switch](control-structures.md#type-switch)
-- Functions
-  - Multiple return values
-  - Named result parameters
-  - Defer
-- Data
-  - Allocation with new
-  - Constructors and composite literals
-  - Allocation with make
-  - Arrays
-  - Slices
-  - Two-dimensional slices
-  - Maps
-  - Printing
-  - Append
+- [Functions](functions.md)
+  - [Multiple return values](functions.md#multiple-return-values)
+  - [Named result parameters](functions.md#named-result-parameters)
+  - [Defer](functions.md#defer)
+- [Data](data.md)
+  - [Allocation with new](data.md#allocation-with-new)
+  - [Constructors and composite literals](data.md#constructors-and-composite-literals)
+  - [Allocation with make](data.md#allocation-with-make)
+  - [Arrays](data.md#arrays)
+  - [Slices](data.md#slices)
+  - [Two-dimensional slices](data.md#two--dimensional-slices)
+  - [Maps](data.md#maps)
+  - [Printing](data.md#printing)
+  - [Append](data.md#append)
 - Initialization
   - Constants
   - Variables
