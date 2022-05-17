@@ -35,10 +35,10 @@
   - [Maps](data.md#maps)
   - [Printing](data.md#printing)
   - [Append](data.md#append)
-- Initialization
-  - Constants
-  - Variables
-  - The init function
+- [Initialization](initialization.md)
+  - [Constants](initialization.md#constants)
+  - [Variables](initialization.md#variables)
+  - [The init function](initialization.md#the-init-function)
 - Methods
   - Pointers vs. Values
 - Interfaces and other types
