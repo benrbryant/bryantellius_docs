@@ -39,14 +39,14 @@
   - [Constants](initialization.md#constants)
   - [Variables](initialization.md#variables)
   - [The init function](initialization.md#the-init-function)
-- Methods
-  - Pointers vs. Values
-- Interfaces and other types
-  - Interfaces
-  - Conversions
-  - Interface conversions and type assertions
-  - Generality
-  - Interfaces and methods
+- [Methods](methods.md)
+  - [Pointers vs. Values](methods.md#pointers-vs-values)
+- [Interfaces and other types](interfaces-and-other-types.md)
+  - [Interfaces](interfaces-and-other-types.md#interfaces)
+  - [Conversions](interfaces-and-other-types.md#conversions)
+  - [Interface conversions and type assertions](interfaces-and-other-types.md#interface-conversions-and-type-assertions)
+  - [Generality](interfaces-and-other-types.md#generality)
+  - [Interfaces and methods](interfaces-and-other-types.md#interfaces-and-methods)
 - The blank identifier
   - The blank identifier in multiple assignment
   - Unused imports and variables
