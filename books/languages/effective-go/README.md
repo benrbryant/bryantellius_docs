@@ -47,11 +47,11 @@
   - [Interface conversions and type assertions](interfaces-and-other-types.md#interface-conversions-and-type-assertions)
   - [Generality](interfaces-and-other-types.md#generality)
   - [Interfaces and methods](interfaces-and-other-types.md#interfaces-and-methods)
-- The blank identifier
-  - The blank identifier in multiple assignment
-  - Unused imports and variables
-  - Import for side effect
-  - Interface checks
+- [The blank identifier](the-blank-identifier.md)
+  - [The blank identifier in multiple assignment](the-blank-identifier.md#the-blank-identifier-in-multiple-assignment)
+  - [Unused imports and variables](the-blank-identifier.md#unused-imports-and-variables)
+  - [Import for side effect](the-blank-identifier.md#import-for-side-effect)
+  - [Interface checks](the-blank-identifier.md#interface-checks)
 - Embedding
 - Concurrency
   - Share by communicating
