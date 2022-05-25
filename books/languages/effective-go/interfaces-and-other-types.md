@@ -7,6 +7,7 @@
 - [Interface conversions and type assertions](#interface-conversions-and-type-assertions)
 - [Generality](#generality)
 - [Interfaces and methods](#interfaces-and-methods)
+- [Embedding](#embedding)
 
 ## Interfaces
 
@@ -131,3 +132,28 @@ http.Handle("/args", http.HandlerFunc(ArgServer))
 ```
 
 Because of this, you can view interfaces as a set of methods, which can be defined for almost any type.
+
+## Embedding
+
+In Javascript and other languages, classes can have _parent_ or _super_ classes that they inherit from. In Go, this is a similar yet contrast concept called _embedding_.
+
+```go
+type Reader interface {
+    Read(p []byte) (n int, err error)
+}
+
+type Writer interface {
+    Write(p []byte) (n int, err error)
+}
+
+// ReadWriter is the interface that combines the Reader and Writer interfaces.
+type ReadWriter interface {
+    Reader
+    Writer
+}
+```
+
+Embedding rules:
+
+- Nested fields are _dominated_ by top level fields of the same name (similar to method/field _overriding_ in other languages)
+- Duplicate names with cause errors, unless the names are never used
