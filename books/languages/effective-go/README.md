@@ -53,14 +53,14 @@
   - [Unused imports and variables](the-blank-identifier.md#unused-imports-and-variables)
   - [Import for side effect](the-blank-identifier.md#import-for-side-effect)
   - [Interface checks](the-blank-identifier.md#interface-checks)
-- Concurrency
-  - Share by communicating
-  - Goroutines
-  - Channels
-  - Channels of channels
-  - Parallelization
-  - A leaky buffer
-- Errors
-  - Panic
-  - Recover
+- [Concurrency](concurrency.md)
+  - [Share by communicating](concurrency.md#share-by-communicating)
+  - [Goroutines](concurrency.md#goroutines)
+  - [Channels](concurrency.md#channels)
+  - [Channels of channels](concurrency.md#channels-of-channels)
+  - [Parallelization](concurrency.md#parallelization)
+  - [A leaky buffer](concurrency.md#a-leaky-buffer)
+- [Errors](errors.md)
+  - [Panic](errors.md#panic)
+  - [Recover](errors.md#recover)
 - A web server
