@@ -270,14 +270,27 @@ class Locations {
 // locations.parseCSV(points);
 // console.log(locations.findFurthest());
 
-// Experiment with File watching
+// Experiment with Singleton Class Design
 
-const { watch } = require("fs");
+class Restaurant {
+  static #_instance = null;
 
-watch(
-  "./books/computer-science/computer-science-I/README.md",
-  (eventType, filename) => {
-    console.log(eventType);
-    console.log(filename);
+  value = false;
+
+  toggle() {
+    this.value = !this.value;
   }
-);
+
+  static getInstance() {
+    if (this.#_instance == null) {
+      this.#_instance = new Restaurant();
+    }
+    return this.#_instance;
+  }
+}
+
+let restaurant = Restaurant.getInstance();
+
+restaurant.toggle();
+
+console.log(Restaurant.getInstance().value);
