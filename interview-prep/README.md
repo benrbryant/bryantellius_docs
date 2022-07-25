@@ -22,4 +22,4 @@
 ## Notes
 
 - [Service Oriented Architecture (SOA)](./soa.md)
-- [Object-Oriented Design](./ood.md)
+- [Object-Oriented Design](./object-oriented-design/ood.md)
