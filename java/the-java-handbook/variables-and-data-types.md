@@ -48,3 +48,16 @@ Values can be explicitly converted to _smaller_ data types via _type casting_. F
 double daysInYear = 365.25;
 int daysOld = 25 * (int)daysInYear; // explicitly converted to int of 365
 ```
+
+## Wrapper Classes
+
+Primitive data types have _wrapper classes_ that have defined methods for interacting with the primitive data.
+
+For example:
+
+```java
+int agePrim = 25; // primitive data type for integers
+Int ageRef = 25; // reference data type for integers
+
+ageRef.intValue(); // returns primitive value
+```
