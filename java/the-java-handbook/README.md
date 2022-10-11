@@ -1,8 +1,8 @@
 # The Java Handbook
 
-- [Bookmark](https://www.freecodecamp.org/news/the-java-handbook/#what-are-wrapper-classes-in-java)
+- [Bookmark](https://www.freecodecamp.org/news/the-java-handbook/#how-to-work-with-strings-in-java)
 - [Codebase on Replit](https://replit.com/@brbryant2639/FirstJavaReplit#Main.java)
-- [Codebase on GitHub]()
+- [Codebase on GitHub](https://github.com/Bryantellius/JavaSandbox)
 
 ## About
 

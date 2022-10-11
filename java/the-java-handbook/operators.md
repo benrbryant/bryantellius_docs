@@ -108,9 +108,9 @@ y <= x; // true
 Logical operators are used to introduce conditional logic.
 
 | Operator | Description                                                        |
-| -------- | ------------------------------------------------------------------ | --- | ------------------------------------------ |
+| -------- | ------------------------------------------------------------------ |
 | `&&`     | Logical AND requires both operands to be true                      |
-| `        |                                                                    | `   | Logical OR requires one operand to be true |
+| `\|\|`   | Logical OR requires one operand to be true                         |
 | `!`      | Logical NOT equate to the negated _boolean_ value from the operand |
 
 Examples:
