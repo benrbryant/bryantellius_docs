@@ -79,9 +79,40 @@ There are many pre-defined methods for working with `String` types.
 | `replace`     | returns a `String` value with the matched contents replaced by the new contents   |
 | `contains`    | returns a `boolean` value depending on if the `String` value contains a substring |
 
-
 Examples:
 
 ```java
+ String testStr = "Hello World!";
+// length
+int testStrLength = testStr.length();
+// isEmpty
+if (testStr.isEmpty()) {
+    System.out.println("Uh oh. The testStr is empty!");
+} else {
+    // split
+    String[] words = testStr.split(" ");
 
+    System.out.printf("The words in '%s' are:\n", testStr);
+
+    for (int i = 0; i < words.length; i++) {
+        System.out.println(words[i].toUpperCase());
+    }
+
+    // contains
+    System.out.printf("\n%s contains 'World': %b", testStr, testStr.contains("World"));
+
+    // replace (replaceAll will replace all occurrences of the substring)
+    System.out.printf("\nIn '%s', 'l' characters will be replaced with '1' characters: %s", testStr, testStr.replaceAll("l", "1"));
+
+    // equals and toLowerCase
+    System.out.printf("\n%s is the same as %s", testStr, testStr.toLowerCase());
+}
+
+System.out.printf("\n%s is %d characters long.", testStr, testStrLength);
 ```
+
+Working with strings is very prevalent in any programming language, so it's great to review these methods, format specifiers, escape characters and more. Review the following:
+
+- [Java Strings Documentation](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html)
+- [JavaTPoint - Java Format Specifiers](https://www.javatpoint.com/java-output-formatting#:~:text=Java%20String%20Format%20Specifiers%20%20%20%20Format,%20Decimal%20Integer%20%209%20more%20rows%20)
+- [JavaTPoint - Java Escape Characters](https://www.javatpoint.com/java-escape-characters#:~:text=List%20of%20Java%20Escape%20Characters%20%20%20,return%20i%20...%20%204%20more%20rows%20)
