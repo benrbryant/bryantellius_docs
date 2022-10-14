@@ -61,3 +61,59 @@ Int ageRef = 25; // reference data type for integers
 
 ageRef.intValue(); // returns primitive value
 ```
+
+## Variable Scope
+
+Variables can be declared in certain scopes. Variable scoping works in a lexical nature: inner scopes can access outer scoped variables, outer scopes cannot access inner scoped variables. This goes for any descendent scopes.
+
+For example:
+
+```java
+// accessible anywhere in the method
+String test = "Hello World!";
+
+if (test != "") {
+    // only accessible in this if block or within any further inner scopes
+    boolean isValid = true;
+
+    switch (test) {
+        case "hello world":
+            // only accessible in this switch block or within any further inner scopes
+            boolean isLowerCased = true;
+            break;
+    }
+}
+
+System.out.println(test); // will work
+System.out.println(isValid); // will not work; variable not accessible from this scope
+System.out.println(isLowerCased); // will not work; variable not accessible from this scope
+```
+
+## Default Variable Values
+
+Local variables do not have default values, but if you define static variables at the class level, default values are as follows:
+
+| Data Type          | Value      |
+| ------------------ | ---------- |
+| byte               | `0`        |
+| short              | `0`        |
+| int                | `0`        |
+| long               | `0L`       |
+| float              | `0.0f`     |
+| double             | `0.0`      |
+| char               | `'\u0000'` |
+| boolean            | `false`    |
+| Any Reference Type | `null`     |
+
+Example:
+
+```java
+public class Main {
+    // default value of 0 since not initialized
+    static int test;
+
+    public static void main(String[] args) {
+        System.out.println(test); // 0
+    }
+}
+```
