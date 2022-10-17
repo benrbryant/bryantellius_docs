@@ -1,6 +1,6 @@
 # The Java Handbook
 
-- [Bookmark](https://www.freecodecamp.org/news/the-java-handbook/#how-to-work-with-arrays-in-java)
+- [Bookmark](https://www.freecodecamp.org/news/the-java-handbook/#how-to-use-loops-in-java)
 - [Codebase on Replit](https://replit.com/@brbryant2639/FirstJavaReplit#Main.java)
 - [Codebase on GitHub](https://github.com/Bryantellius/JavaSandbox)
 
