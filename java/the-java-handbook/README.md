@@ -20,3 +20,4 @@
 - [Iteration Statements](./loops.md)
 - [Working with Arrays](./working-with-arrays.md)
 - [Working with ArrayLists](./array-lists.md)
+- [Working with HashMaps](./hash-maps.md)
