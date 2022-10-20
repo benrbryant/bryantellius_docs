@@ -1,6 +1,6 @@
 # The Java Handbook
 
-- [Bookmark](https://www.freecodecamp.org/news/the-java-handbook/#how-to-work-with-hash-maps-in-java)
+- [Bookmark](https://www.freecodecamp.org/news/the-java-handbook)
 - [Codebase on Replit](https://replit.com/@brbryant2639/FirstJavaReplit#Main.java)
 - [Codebase on GitHub](https://github.com/Bryantellius/JavaSandbox)
 
@@ -21,3 +21,8 @@
 - [Working with Arrays](./working-with-arrays.md)
 - [Working with ArrayLists](./array-lists.md)
 - [Working with HashMaps](./hash-maps.md)
+- [Classes and Objects](./class-and-objects.md)
+
+## Status
+
+✅ - #1 Completed 10/20/2022
