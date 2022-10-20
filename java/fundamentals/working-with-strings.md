@@ -22,7 +22,14 @@ String state = new String("Alabama");
 
 ## Formatting a String
 
-You can combine strings using _concatenation_.
+You can combine strings using _concatenation_. To concatenate two strings, place a `+` symbol as the operator between any two strings.
+
+```java
+String firstName = "Ben";
+String lastName = "Bryant";
+
+System.out.println(firstName + lastName); // prints, "BenBryant"
+```
 
 You can format strings with the `String.format()` method.
 
@@ -70,6 +77,7 @@ There are many pre-defined methods for working with `String` types.
 | Method        | Description                                                                       |
 | ------------- | --------------------------------------------------------------------------------- |
 | `length`      | returns the length of characters in a string                                      |
+| `charAt`      | returns the character at the given index                                          |
 | `isEmpty`     | returns a `boolean` depending on if the string has contents                       |
 | `split`       | returns an `Array` of split strings based on a _separator_ string or regex        |
 | `join`        | returns a `String` value of multiple `Array` values joined together               |
