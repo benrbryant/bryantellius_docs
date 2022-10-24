@@ -65,6 +65,28 @@ Now instances from this class can call a `greet` method.
 testPerson.greet();
 ```
 
+#### Defining Method Parameters
+
+Methods can receive input, or _parameters_, that allow us to reuse methods for many purposes. We define parameters as a comma separated list within parentheses after the method name.
+
+```java
+public void add(int a, int b) {
+    System.out.println(a + b);
+}
+```
+
+#### Defining Method Return Types
+
+Here we define two parameters, `a` and `b`, that are listed as `int` values. The parameter data type is defined before the parameter name. Parameter names follow variable naming and scoping rules.
+
+When we define a method (function) in Java, we need to define the _return value type_. If the method does not return a value, we define `void` as the return type (as seen above). Let's change the `add` method to have a return type of `int` and return the result add adding `a` and `b` parameter values.
+
+```java
+public int add(int a, int b) {
+    return a + b;
+}
+```
+
 #### Method Overloading
 
 We can define several use cases for any given method. Let's say that we want the `Person` to be able to greet with or without a provide name. As is `"Hello!"` vs. `"Hello, <name>!"`. We can define this distinction through _method overloading_, where we will define a method several different ways.
