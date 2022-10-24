@@ -12,6 +12,14 @@ Variables can start with letters, `_` or `$`. Variable names are case sensitive 
 
 Variables that are `final`, ex: `final string name`, cannot be re-assigned. However, they can be declared and assigned a value later.
 
+### Inferred Typing
+
+You can declare a variable with `var` to have _inferred_ typing. The variable will take the data type from whatever value you assign it.
+
+```java
+var num = 10; // is inferred to be an Integer
+```
+
 ## Data Types
 
 ### Primitive Data Types
@@ -42,7 +50,7 @@ double ageInDays = ageInYears * 365.25; // 9131.25 which is a double data type
 
 ### Explicit Type Conversion
 
-Values can be explicitly converted to _smaller_ data types via _type casting_. For example:
+Values can be explicitly converted to _smaller_ data types via _data conversion_. For example:
 
 ```java
 double daysInYear = 365.25;

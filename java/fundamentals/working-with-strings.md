@@ -119,6 +119,27 @@ if (testStr.isEmpty()) {
 System.out.printf("\n%s is %d characters long.", testStr, testStrLength);
 ```
 
+## Other Formatting Helpers
+
+There are other classes and methods that help with formatting strings in Java.
+
+The `NumberFormat` class has methods for formatting string numbers.
+
+Example:
+
+```java
+import java.text.NumberFormat;
+
+// ... inside of a method
+NumberFormat numF = NumberFormat.getNumberInstance();
+System.out.println("Number Formatted: " + numF.format(1234567890.99)); // prints, "Number Formatted: 1,234,567,890.99"
+
+NumberFormat currencyF = NumberFormat.getCurrencyInstance();
+System.out.println("Currency Formatted: " + currencyF.format(1234567890.99)); // prints, "Currency Formatted: $1,234,567,890.99"
+```
+
+## Further Reading
+
 Working with strings is very prevalent in any programming language, so it's great to review these methods, format specifiers, escape characters and more. Review the following:
 
 - [Java Strings Documentation](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html)
