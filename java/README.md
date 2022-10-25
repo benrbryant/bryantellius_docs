@@ -6,17 +6,17 @@
 
 ## Notes Table of Contents
 
-- [Intro](./intro.md)
-- [Variables and Data Types](./variables-and-data-types.md)
-- [Operators](./operators.md)
-- [Working with Strings](./working-with-strings.md)
-- [Input and Output](./input-and-output.md)
-- [Conditional Statements](./conditional-statements.md)
-- [Iteration Statements](./loops.md)
-- [Working with Arrays](./working-with-arrays.md)
-- [Working with ArrayLists](./array-lists.md)
-- [Working with HashMaps](./hash-maps.md)
-- [Classes and Objects](./class-and-objects.md)
+- [Intro](./fundamentals/intro.md)
+- [Variables and Data Types](./fundamentals/variables-and-data-types.md)
+- [Operators](./fundamentals/operators.md)
+- [Working with Strings](./fundamentals/working-with-strings.md)
+- [Input and Output](./fundamentals/input-and-output.md)
+- [Conditional Statements](./fundamentals/conditional-statements.md)
+- [Iteration Statements](./fundamentals/loops.md)
+- [Working with Arrays](./fundamentals/working-with-arrays.md)
+- [Working with ArrayLists](./fundamentals/array-lists.md)
+- [Working with HashMaps](./fundamentals/hash-maps.md)
+- [Classes and Objects](./fundamentals/class-and-objects.md)
 
 ## Codebase for Notes
 
