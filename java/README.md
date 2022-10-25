@@ -2,7 +2,7 @@
 
 ## Bookmark
 
-- [Learning Java](https://www.linkedin.com/learning/learning-java-4/mapping-out-program-control-flow?autoSkip=true&autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d8919392015a1a081f9141&resume=false&u=76013930)
+- [Learning Java Applications 2019](https://www.linkedin.com/learning/learning-java-applications-2019/build-and-deploy-java-applications?autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d8919392015a1a081f9141&u=76013930)
 
 ## Notes Table of Contents
 
