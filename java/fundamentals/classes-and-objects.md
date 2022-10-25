@@ -75,6 +75,20 @@ public void add(int a, int b) {
 }
 ```
 
+You can define a method to receive a variable number of parameters with the following syntax.
+
+```java
+public static int add(int... values) {
+    int sum = 0;
+    for (int num : values) {
+        sum += num;
+    }
+    return sum;
+}
+```
+
+The `values` parameter in this case will be of type `int[]` containing all of the `int` values that are provided when the method is called.
+
 #### Defining Method Return Types
 
 Here we define two parameters, `a` and `b`, that are listed as `int` values. The parameter data type is defined before the parameter name. Parameter names follow variable naming and scoping rules.
