@@ -12,7 +12,7 @@
 > _Closure_ is when a function remembers and continues to access variables from outside its scope, even when the function is executed in a different scope.
 
 - Closures can create/observe variables outside of the local scope in which values were defined
-- Very commonly closure can be observed in asynchrounous JS, such as the fetch api, event handlers, etc
+- Very commonly closure can be observed in asynchronous JS, such as the fetch api, event handlers, etc
 
 > _Scope_ is the set of rules that controls how references to variables are resolved.
 

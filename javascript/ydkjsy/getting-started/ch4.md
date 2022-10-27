@@ -30,4 +30,4 @@
 
 JavaScript is not C#, Java, Python, Ruby, etc.
 
-Learn to code JavaScript the JavaScript way. It can be inticing to code JS from other language styles, but that would be very limiting.
+Learn to code JavaScript the JavaScript way. It can be enticing to code JS from other language styles, but that would be very limiting.

@@ -33,6 +33,6 @@ Structured Data Types
 - Loose equality allows for _coercive equality_, enabling type coercion before comparison
 - Strict equality disables type coercion from _identity equality_
 - JS programs can be organized between data/behavior relationships
-  - Classes defined a structure for data (properties) and behaviors (methods)
+  - Classes define a structure for data (properties) and behaviors (methods)
 - _Module Factories_ are functions that contain a private (local) scope with declarations, and return an object with exposed properties and methods
 - ES modules are different (newer) in that instead of a function coupled with instantiation, the entire file is assumed a module, and `import` / `export` syntax is used
