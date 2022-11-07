@@ -1,0 +1,25 @@
+{
+  "name": "javascript-test-driven-development-es6",
+  "version": "1.0.0",
+  "description": "Source: [LinkedIn Learning - JavaScript: Test-Driven Development (ES6) by Shaun Wassell](https://www.linkedin.com/learning/javascript-test-driven-development-es6/intro-video?autoplay=true&u=76013930)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register --file src/mocha-setup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0",
+    "regenerator-runtime": "^0.13.10",
+    "supertest": "^6.3.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.11.0"
+  }
+}
