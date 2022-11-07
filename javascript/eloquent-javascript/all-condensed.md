@@ -8,7 +8,7 @@
 
 JavaScript was released in 1995 as a way to introduce logic to web pages in the Netscape Navigator browser.
 
-## Ch. 1: Values, Types and Operators
+## Ch. 1 - Values, Types and Operators
 
 All data is represented as _bits_, 0s and 1s, to a computer.
 
@@ -27,7 +27,7 @@ All data is represented as _bits_, 0s and 1s, to a computer.
 - Logical &&, ||, !
 - Ternary - ? :
 
-## Ch. 2: Program Structure
+## Ch. 2 - Program Structure
 
 "A fragment of code that produces a value is called an expression."
 
@@ -67,7 +67,7 @@ Comments are for readability and are ignored by the JavaScript runtime environme
 
 JavaScript is _case sensitive_.
 
-## Ch. 3: Functions
+## Ch. 3 - Functions
 
 Functions are blocks of code that can receive input and return output.
 
@@ -100,3 +100,11 @@ add(1, 2, 3); // returns 3, with the third parameter 3 being ignored
 ```
 
 A function that calls itself is performing _recursion_.
+
+## Ch. 4 - Data Structures: Objects and Arrays
+
+Objects are collections of data stored in a structure.
+
+_Dot notation_ and _bracket notation_ are two ways to access properties (data) and methods (behaviors) stored on object structures.
+
+Arrays are specific types of objects that store related data in a "list" format, or sequential order that is _zero-indexed_.
