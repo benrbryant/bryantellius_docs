@@ -16,5 +16,4 @@ A List is a Collection data type that is _ordered_ and contains _duplicates_.
 
 ## Queue
 
-A Queue is a Collection data type that is _ordered_ and operates in FIFO operations.
-
+A Queue is a Collection data type that is _ordered_ and operates in FIFO operations. An example of a queue is a `LinkedList`.

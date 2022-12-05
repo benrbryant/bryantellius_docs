@@ -17,3 +17,7 @@ ArrayList<String> names = new ArrayList<>();
 
     names.stream().filter(n -> n.startsWith("A")).forEach(System.out::println);
 ```
+
+## Parallel Streams
+
+Streams can be run in _parallel_ by using the `parallelStream` method instead of `stream`. If you are iterating over a very large data set, especially more than once, it is computationally efficient to do this in parallel. If you do not have a large data set, use the regular `stream` method.
