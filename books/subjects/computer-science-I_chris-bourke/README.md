@@ -7,3 +7,4 @@ By Dr. Chris Bourke
 ## Table of Contents
 
 - [Introduction](./intro.md)
+- [Basics](./basics.md)
