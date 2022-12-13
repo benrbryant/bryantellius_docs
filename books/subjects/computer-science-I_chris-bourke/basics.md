@@ -138,3 +138,145 @@ Below is a list of assignment and arithmetic operators:
 
 ## Basic Input and Output
 
+Three standard communication streams in computing systems are standard input (stdin), standard output (stdout), and standard error (stderr).
+
+Many languages support print-styled formatting. Formats produce a string from a template and placeholders. Common placeholders include:
+
+- `%d`: integer
+- `%f`: floating point number
+- `%c`: character
+- `%s`: string
+
+Example:
+
+```java
+String myName = "Ben";
+
+System.out.printf("Hello! My name is %s", myName); // "Hello! My name is Ben"
+
+// or without printing
+String myMessage = String.format("Hello! My name is %s", myName);
+```
+
+An addition number modifier can force the minimum columns or precision point of formatted numbers.
+
+```java
+int myAge = 25;
+System.out.printf("My age is %3d", myAge); // "My age is 025"
+```
+
+Not all programs are interactive through the command line, but generally most programs accept input via the _Command Line Interface_. These inputs are accessible through the argument vector (`arcv`), or count (`argc`), collections.
+
+## Debugging
+
+_Debugging_ comes from Grace Hopper's experience with an issue while working on the Mark II computer for the US Navy Research lab. A moth flew into the computer, and "debugging" the fixed the issue. Hence, debugging is synonymous with fixing program errors.
+
+Common Error Types:
+
+- Type Errors
+- Syntax Errors
+- Runtime Errors
+- Logical Errors
+
+## Examples
+
+### Example 1: Celsius to Fahrenheit
+
+Outline:
+
+1. Prompt the user to input a Fahrenheit value
+2. Compute the Fahrenheit value to Celsius using: C = 5/9 \* (F - 32)
+3. Output the Celsius result to the user
+
+Pseudocode:
+
+```txt
+F <- input from user
+C <- 5/9 * (F - 32)
+Output C to user
+```
+
+JavaScript (browser):
+
+```js
+let fahrenheitInput = prompt(
+  "What Fahrenheit temperature would you like to convert?"
+);
+let celsiusConversion = (5 / 9) * (fahrenheitInput - 32);
+alert(`${fahrenheitInput} °F is ${celsiusConversion} °C`);
+```
+
+Java:
+
+```java
+Scanner rl = new Scanner(System.in);
+System.out.println("What Fahrenheit temperature would you like to convert?");
+
+float fahrenheitInput = rl.nextFloat();
+float celsiusConversion = 5.0f / 9.0f * (fahrenheitInput - 32);
+
+System.out.printf("%3.2f °F is %3.2f °C", fahrenheitInput, celsiusConversion);
+
+rl.close()
+```
+
+### Example 2: Quadratic Roots
+
+Outline:
+
+1. Prompt the user to enter a coefficient
+2. Prompt the user to enter b coefficient
+3. Prompt the user to enter c coefficient
+4. Calculate the root 1 with: (-b + Math.sqrt(b\*\*2 - 4ac)) / 2a
+5. Calculate the root 2 with: (-b - Math.sqrt(b\*\*2 - 4ac)) / 2a
+6. Output the result to the user in the format "the roots of ax2 + bx + c are r1, r2"
+
+Pseudocode:
+
+```txt
+a <- input from user
+b <- input from user
+c <- input from user
+r1 <- (-b + Math.sqrt(b**2 - 4ac)) / 2a
+r2 <- (-b - Math.sqrt(b**2 - 4ac)) / 2a
+Output "the roots of ax2 + bx + c are r1, r2" to the user
+```
+
+JavaScript:
+
+```js
+let a = parseFloat(prompt("Enter a coefficient:"));
+let b = parseFloat(prompt("Enter b coefficient:"));
+let c = parseFloat(prompt("Enter c coefficient:"));
+
+let r1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+let r2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+
+console.log(`The roots of ${a}x2 + ${b}x + ${c} are ${r1}, ${r2}`);
+```
+
+Java:
+
+```java
+Scanner rl = new Scanner(System.in);
+
+System.out.println("Enter a coefficient:");
+double a = rl.nextDouble();
+System.out.println("Enter b coefficient:");
+double b = rl.nextDouble();
+System.out.println("Enter c coefficient:");
+double c = rl.nextDouble();
+
+double sqrt = Math.sqrt(b * b - 4 * a * c);
+
+double r1 = (-b + sqrt) / (2 * a);
+double r2 = (-b - sqrt) / (2 * a);
+
+System.out.printf("The roots of %fx2 + %fx + %f are %f, %f", a, b, c, r1, r2);
+
+rl.close();
+```
+
+## Exercises
+
+// TODO

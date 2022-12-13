@@ -8,3 +8,4 @@ By Dr. Chris Bourke
 
 - [Introduction](./intro.md)
 - [Basics](./basics.md)
+- [Conditionals](./conditionals.md)
