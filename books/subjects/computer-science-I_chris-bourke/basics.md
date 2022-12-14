@@ -178,9 +178,11 @@ Common Error Types:
 - Runtime Errors
 - Logical Errors
 
-## Examples
+## Exercises
 
-### Example 1: Celsius to Fahrenheit
+### Exercise 1: Celsius to Fahrenheit
+
+Given a Fahrenheit temperature value, convert that value to Celsius.
 
 Outline:
 
@@ -221,6 +223,8 @@ rl.close()
 ```
 
 ### Example 2: Quadratic Roots
+
+Given a, b, and c coefficients of a quadratic, calculate the two roots.
 
 Outline:
 
@@ -276,7 +280,3 @@ System.out.printf("The roots of %fx2 + %fx + %f are %f, %f", a, b, c, r1, r2);
 
 rl.close();
 ```
-
-## Exercises
-
-// TODO
