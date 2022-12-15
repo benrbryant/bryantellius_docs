@@ -10,3 +10,4 @@ By Dr. Chris Bourke
 - [Basics](./basics.md)
 - [Conditionals](./conditionals.md)
 - [Loops](./loops.md)
+- [Functions](./functions.md)
