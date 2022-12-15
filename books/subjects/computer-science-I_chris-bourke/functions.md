@@ -166,6 +166,161 @@ add(1); // even with only `a` provided, the function executes and yields 1 (1 + 
 
 ### Exercise 1: Convert CMYK to RGB
 
+Given values for C, M, Y, and K in CMYK coloring, output the corresponding RGB conversion in the following string format: `rgb(r, g, b)`.
+
+Use the following formulas:
+
+r = 255 x (1 − C) x (1 − K)
+g = 255 x (1 − M) x (1 − K)
+b = 255 x (1 − Y ) x (1 − K)
+
+Pseudocode:
+
+```txt
+FUNCTION convertCMYKToRGB(c, m, y, k)
+  r <- 255 * (1 - c) * (1 - k)
+  g <- 255 * (1 - m) * (1 - k)
+  b <- 255 * (1 - y) * (1 - k)
+  rgb <- rgb(r, g, b)
+  return rgb
+END
+```
+
+JavaScript
+
+```js
+function convertCMYKToRGB(c, m, y, k) {
+  let r = parseInt(255 * (1 - c) * (1 - k));
+  let g = parseInt(255 * (1 - m) * (1 - k));
+  let b = parseInt(255 * (1 - y) * (1 - k));
+  let rgb = `rgb(${r}, ${g}, ${b})`;
+  return rgb;
+}
+```
+
+Java
+
+```java
+public static String convertCMYKToRGB(double c, double m, double y, int k) {
+  int r = (int)(255 * (1 - c) * (1 - k));
+  int g = (int)(255 * (1 - m) * (1 - k));
+  int b = (int)(255 * (1 - y) * (1 - k));
+  return String.format("rgb(%d, %d, %d)", r, g, b);
+}
+```
+
 ### Exercise 2: Convert RGB to Grayscale
 
+Create three different functions that are given r, g, b values, and output the grayscale rgb value.
+
+> An RGB color value is grayscale if all three components have the same value.
+
+Use the following three techniques:
+
+1. Average method - (r + g + b) / 3
+2. Lightness method - (max{r, g, b} + min{r, g, b}) / 2
+3. Luminosity method - 0.21r + 0.72g + 0.07b
+
+Pseudocode:
+
+```txt
+FUNCTION toAvgGrayscale(r, g, b)
+  grayscale <- (r + g + b) / 3
+  return grayscale
+END
+
+FUNCTION toLightnessGrayscale(r, g, b)
+  max <- max{r, g, b}
+  min <- min{r, g, b}
+  grayscale <- (max + min) / 2
+  return grayscale
+END
+
+FUNCTION toLuminosityGrayscale(r, g, b)
+  grayscale <- (0.21 *r) + (0.72 * g) + (0.07 * b)
+  return grayscale
+END
+```
+
+JavaScript
+
+```js
+function toAvgGrayscale(r, g, b) {
+  let grayscale = (r + g + b) / 3;
+  return grayscale;
+}
+
+function toLightnessGrayscale(r, g, b) {
+  let max = Math.max(r, g, b);
+  let min = Math.min(r, g, b);
+  let grayscale = (max + min) / 2;
+  return grayscale;
+}
+
+function toLuminosityGrayscale(r, g, b) {
+  let grayscale = 0.21 * r + 0.72 * g + 0.07 * b;
+  return grayscale;
+}
+```
+
+Java
+
+```java
+public static int toAvgGrayscale(int r, int g, int b) {
+  return (r + g + b) / 3;
+}
+
+public static int toLightnessGrayscale(int r, int g, int b) {
+  int max = r > g ? Math.max(r, b) : Math.max(b, g);
+  int min = r < g ? Math.min(r, b) : Math.min(b, g);
+  return (max + min) / 2;
+}
+
+public static int toLuminosityGrayscale(int r, int g, int b) {
+  return (int) ((0.21 * r) + (0.72 * g) + (0.07 * b));
+}
+```
+
 ### Exercise 3: Length Conversions
+
+Write two utility functions that convert given kilometers to miles or given miles to kilometers.
+
+- One mile is equivalent to 1.609347219 kilometers
+
+Pseudocode
+
+```txt
+FUNCTION convertKilometerToMile(k)
+  miles <- k * (1 / 1.609347219)
+  return miles
+END
+
+FUNCTION convertMileToKilometer(mi)
+  kilometers <- mi * 1.609347219
+  return kilometers
+END
+```
+
+JavaScript
+
+```js
+function convertKilometerToMile(k) {
+  return k * (1 / 1.609347219);
+}
+
+function convertMileToKilometer(mi) {
+  return mi * 1.609347219;
+}
+```
+
+Java
+
+```java
+public static double convertKilometerToMile(double k) {
+  return k * (1 / 1.609347219);
+}
+
+public static double convertMileToKilometer(double mi) {
+  return mi * 1.609347219;
+}
+```
