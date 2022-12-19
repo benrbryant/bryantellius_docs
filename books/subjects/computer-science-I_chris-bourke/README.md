@@ -11,3 +11,4 @@ By Dr. Chris Bourke
 - [Conditionals](./conditionals.md)
 - [Loops](./loops.md)
 - [Functions](./functions.md)
+- [Error Handling](./error-handling.md)
