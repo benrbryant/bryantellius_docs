@@ -28,4 +28,4 @@
 | Source                                                                                       | Author                 | Status |
 | -------------------------------------------------------------------------------------------- | ---------------------- | ------ |
 | [The Java Handbook](https://www.freecodecamp.org/news/the-java-handbook/)                    | Farhan Hasin Chowdhury | ✅     |
-| [Learning Java](https://www.linkedin.com/learning/paths/become-a-java-programmer?u=76013930) | Kathryn Hodge          | …      |
+| [Learning Java](https://www.linkedin.com/learning/paths/become-a-java-programmer?u=76013930) | Kathryn Hodge          | ✅     |
