@@ -63,3 +63,72 @@ Ultimately, "the desireability of a change is directly proportional to the value
 
 **Reducing the effort of maintenance is more important than reducing the effort of implementation.**
 
+### Quality of Design
+
+**The quality level of your design should be proportional to the length of future time in which your system will continue to help people.**
+
+## Chapter 4: Change
+
+**The longer your program exists, the more probable it is that any piece of it will have to change.**
+
+### The Three Flaws
+
+There are 3 mistakes that developers make when dealing with the Law of Change:
+
+1. Writing code that isn't needed
+2. Not making the code easy to change
+3. Being too generic
+
+#### Writing Unneeded Code
+
+YAGNI, or "you ain't gonna need it"
+
+When you attempt to predict the future of a program or environment, you can end up writing code that will never be used. Stick to the task/feature at hand, and write code when you need it.
+
+**Don't write code until you actually need it, and remove any code that isn't being used.**
+
+#### Making the Code Hard to Change
+
+Code that is hard to change, or "rigid design" can happen by:
+
+1. Making too many assumptions about the future
+2. Writing code without enough design
+
+**Code should be designed based on what you know now, not on what you think will happen in the future.**
+
+#### Being Too Generic
+
+"Overengineering" - designing a solution so generic that it will accommodate for every possible future situation.
+
+**Be only as generic as you know you need to be right now.**
+
+### Incremental Development and Design
+
+_Incremental development and design_ involves developing features in a system piece by piece, and can be a combatant to avoiding the three flaws listed earlier.
+
+Design -> develop -> Redesign -> develop -> Redesign -> etc...
+
+> Incremental development is a method of building up a hole system by doing work in small pieces.
+
+## Chapter 5: Defects and Design
+
+The Law of Defect Probability states that **the chance of introducing a defect into your program is proportional to the size of the changes you make to it.**
+
+More defects directly increases maintenance.
+
+In many cases, smaller changes lead to less defects that leads to less maintenance.
+
+**The best design is the one that allows for the most change in the environment with the least change in the software.**
+
+Only fix a problem when there is _significant evidence_ of there being a problem.
+
+**In any particular system, any piece of information should, ideally, exist only once.** AKA DRY
+
+Code reusability reduces future changes in your program, thus reducing the probability of defects.
+
+## Chapter 6: Simplicity
+
+The Law of Simplicity states that **the ease of maintenance of any piece of software is proportional to the simplicity of its individual pieces.**
+
+Incremental Design and Development implemented with creating small, simple pieces of that make up a whole program ensures that you code can remain simple and maintainable over time.
+
