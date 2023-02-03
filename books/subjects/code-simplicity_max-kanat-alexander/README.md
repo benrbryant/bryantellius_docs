@@ -2,7 +2,7 @@
 
 By Max Kanat-Alexander
 
-[Source (PDF)](https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf)
+✅ [Source (PDF)](https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf)
 
 ## Chapter 1: Intro
 
@@ -130,5 +130,61 @@ Code reusability reduces future changes in your program, thus reducing the proba
 
 The Law of Simplicity states that **the ease of maintenance of any piece of software is proportional to the simplicity of its individual pieces.**
 
-Incremental Design and Development implemented with creating small, simple pieces of that make up a whole program ensures that you code can remain simple and maintainable over time.
+Incremental Design and Development implemented to create small, simple pieces that make up a whole program ensures that you code can remain simple and maintainable over time.
 
+Be as simple and understandable as possible. Your code should be as easy as possible for new programmers to understand, and your program should be as easy as possible for your users to understand.
+
+_Consistency_ is one way to add simplicity to your codebase.
+
+**Readability of code depends primarily on how space is occupied by letters and symbols.**
+
+Names should be descriptive without being verbose.
+
+The code should be readable enough for someone to understand what it does. Comments should be used for _why_ code is used for a specific purpose.
+
+**_Simplicity requires design_**
+
+## Chapter 7: Complexity
+
+"Complexity leads to more complexity leads to more complexity"
+
+Some ways that complexity is added:
+
+1. New features
+2. Expanding the purpose of the software
+3. Adding programmers
+4. Changing things that don't need to be changed
+5. Being locked into bad technologies
+6. Misunderstanding
+7. Poor or no design
+8. Reinventing the wheel
+
+Contain complexity by sticking to the software's _purpose_.
+
+Understanding the problem is the first step to writing a simple solution.
+
+### How to Avoid Bad Technologies
+
+There are three factors that can determine if a technology is good or bad:
+
+1. Survival Potential - the likelihood that is continues to be maintained
+2. Interoperability - the ease of which you could switch to using a different technology
+3. Attention to Quality - the rate or existence of improvement in code quality
+
+### Complex Problems
+
+Some problems can be terribly complex to understand; however, this doesn't mean that the solution can't be simple.
+
+**Many difficult design problems can be solved by simply drawing or writing them out on paper.**
+
+### Handling Complexity
+
+If some pieces of software of complex, try to redesign the pieces to be smaller and simpler.
+
+If complex pieces cannot be reduced, then those pieces can be contained or _hidden_ from the rest of the codebase. From the outside-in, the code will appear simple.
+
+## Chapter 8: Testing
+
+The Law of Testing states that **the degree to which you know how your software behaves is the degree to which you have accurately tested it.**
+
+Or more simply, **unless you've tried it, you don't know that it works.**
