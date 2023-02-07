@@ -4,6 +4,17 @@ By Max Kanat-Alexander
 
 ✅ [Source (PDF)](https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf)
 
+## Table of Contents
+
+1. [Chapter 1: Intro](#chapter-1-intro)
+2. [Chapter 2: The Purpose of Software](#chapter-2-the-purpose-of-software)
+3. [Chapter 3: The Future](#chapter-3-the-future)
+4. [Chapter 4: Change](#chapter-4-change)
+5. [Chapter 5: Defects and Design](#chapter-5-defects-and-design)
+6. [Chapter 6: Simplicity](#chapter-6-simplicity)
+7. [Chapter 7: Complexity](#chapter-7-complexity)
+8. [Chapter 8: Testing](#chapter-8-testing)
+
 ## Chapter 1: Intro
 
 To improve the result, you must improve the code.
