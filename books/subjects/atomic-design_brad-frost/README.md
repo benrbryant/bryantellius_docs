@@ -8,6 +8,7 @@ By Brad Frost
 
 1. [Chapter 1: Designing Systems](#chapter-1-designing-systems)
 2. [Chapter 2: Atomic Design Methodology](#chapter-2-atomic-design-methodology)
+3. [Chapter 3: Tools of the Trade](#chapter-3-tools-of-the-trade)
 
 ## Chapter 1: Designing Systems
 
@@ -48,4 +49,78 @@ Style guides often lack the exposure to achieve their true potential: to be help
 Style guides end up being a large pool of modules, instead of a _structured library_.
 
 ## Chapter 2: Atomic Design Methodology
+
+A good example of modularity can be found in the natural world.
+
+For example: atoms -> molecules -> organisms
+
+"Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner."
+
+The 5 distinct stages are:
+
+1. Atoms
+2. Molecules
+3. Organisms
+4. Templates
+5. Pages
+
+**Atomic design is a mental model to help define user interfaces as a cohesive whole.**
+
+### Atoms
+
+Atoms are the smallest, distinct elements that can't be broken down any further without losing function.
+
+They have base style and innate properties, but must be applied to benefit the interface.
+
+Examples: label, input, button, etc
+
+### Molecules
+
+Molecules are "relatively simple groups of UI elements functioning together as a unit."
+
+Examples: form molecule <- label atom, input atom, button atom
+
+Molecules should be simple UI components. That way, they are reusable, maintainable, consistent, and testable.
+
+### Organisms
+
+Organisms are "relatively complex UI components composed of groups of molecules and/or atoms and/or other organisms."
+
+Examples: header organism <- site logo atom, navigation molecule, search form molecule
+
+### Templates
+
+Templates are "page-level objects that place components into a layout and articulate the design's underlying content structure."
+
+Templates provide _context_ for the abstract molecules and organisms that combine to make a page.
+
+Think about the _content structure_, rather than the _content data_.
+
+Templates are guide-rails for dynamic content.
+
+### Pages
+
+Pages are "specific instances of templates that show what a UI looks like with real representative content in place."
+
+Pages are essential "for testing the effectiveness of the underlying design system."
+
+> We must create systems that establish reusable design patterns and also accurately reflect the reality of the content we’re putting inside of those patterns.
+
+"Pages also provide a place to articulate variations in templates."
+
+### Summary of the Atomic Design Elements
+
+1. "Atoms are UI elements that can't be broken down any further and serve as the elemental building blocks of an interface"
+2. "Molecules are collections of atoms that form relatively simple UI components"
+3. Organisms are relatively complex components that form discrete sections of an interface"
+4. "Templates place components within a layout adn demonstrate the design's underlying content structure"
+5. "Pages apply real content to templates and articulate variations to demonstrate the final UI and test resilience of the design system"
+
+### Advantages
+
+- Ability to quickly traverse the abstract and concrete of our interfaces
+- Considers design and content separately, although influencing each other
+- Atomic design can be applied to _any user interface, created in any tech stack_
+
+## Chapter 3: Tools of the Trade
 
