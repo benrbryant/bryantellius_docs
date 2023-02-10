@@ -9,6 +9,7 @@ By Brad Frost
 1. [Chapter 1: Designing Systems](#chapter-1-designing-systems)
 2. [Chapter 2: Atomic Design Methodology](#chapter-2-atomic-design-methodology)
 3. [Chapter 3: Tools of the Trade](#chapter-3-tools-of-the-trade)
+4. [Chapter 4: The Atomic Workflow](#chapter-4-the-atomic-workflow)
 
 ## Chapter 1: Designing Systems
 
@@ -123,4 +124,15 @@ Pages are essential "for testing the effectiveness of the underlying design syst
 - Atomic design can be applied to _any user interface, created in any tech stack_
 
 ## Chapter 3: Tools of the Trade
+
+[Pattern Lab](https://patternlab.io/), a front-end workshop environment for building, testing, and showcasing design system UI components.
+
+- Utilizes [Mustache](https://mustache.github.io/), a logic-less template language.
+- For other style guide tools, see [Website Style Guide Resources](http://styleguides.io/tools.html)
+
+## Chapter 4: The Atomic Workflow
+
+Communication is with all parties is key.
+
+Pattern libraries **"promote consistency and cohesion, speed up your team's productivity, establish a more collaborative workflow, establish a shared vocabulary, provide helpful documentation, make testing easier, and serve as a future-friendly foundation."**
 
