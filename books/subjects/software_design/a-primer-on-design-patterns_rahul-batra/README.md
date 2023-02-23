@@ -4,6 +4,17 @@ By Rahul Batra
 
 [Book Source](https://leanpub.com/aprimerondesignpatterns/read)
 
+## Table of Contents
+
+1. [Strategy Pattern](#strategy-pattern)
+2. [Decorator Pattern](#decorator-pattern)
+3. [Factory Pattern](#factory-pattern)
+4. [Observer](#observer-pattern)
+5. [Template Method Pattern](#template-method-pattern)
+6. [Singleton Pattern](#singleton-pattern)
+
+## Notes
+
 A **design pattern** is the reusable form of a solution to a design problem.
 
 In 1994, _Design Patterns: Elements of Reusable Object-Oriented Software_ by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides set the stage for univerally adopted design patterns. The book became known as the _GoF (Gang of Four) book_, and _GoF patterns_ within.
@@ -280,3 +291,149 @@ Example: Blog Entry Subscription
 
 The _Observer Pattern_ defines a "one-to-many dependency between objects", where each of its dependents can be notified of a change in its state. This pattern can fit into many examples where observer _subscribes_ to data or events.
 
+```ts
+class Reader {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  public notify() {
+    // ...
+    console.log(`${this.name} is notified...`);
+  }
+}
+
+class Blog {
+  subscribers: Reader[];
+  posts: any[];
+  author: string;
+
+  constructor(name: string) {
+    this.subscribers = [];
+    this.posts = [];
+    this.author = name;
+  }
+
+  public subscribe(reader: Reader) {
+    this.subscribers.push(reader);
+  }
+
+  public notifySubscribers() {
+    for (let reader of this.subscribers) {
+      reader.notify();
+    }
+  }
+
+  public addPost(post: string) {
+    this.posts.push(post);
+    console.log(`${this.author} added a post...`);
+    this.notifySubscribers();
+  }
+}
+```
+
+In this example, `Blog` is an _observable_ and `Reader` is an _observer_ that is subscribed to new blog posts. `Blog` is responsible for keeping track of, and updating all readers that are subscribed to it.
+
+### Observer Pattern Summary
+
+The _Observer Pattern_ consists of an object (subject or _observable_) that "maintains a list of its dependents, called _observers_, and notifies them automatically of any _state changes_." This is a pattern that enables object dependency without forcing tight object coupling.
+
+## Template Method Pattern
+
+Example: Mail Client Application
+
+As far as mail applications go, there are a variety of headers that need to exist, starting with plain text vs html emails.
+
+```ts
+abstract class Mail {
+  contentTypeHeader: string;
+
+  getText(source: InputSource) {}
+
+  public abstract applyHeaders(): void;
+
+  public fillAddressFields(fields: Fields) {}
+
+  public authSMTP(user: string, password: string, method: string) {}
+
+  public sendMailUsingSMTP(conn: SMTPConnection) {}
+
+  public sendMail() {
+    this.getText();
+    this.applyHeaders();
+    this.fillAddressFields();
+    this.authSMTP();
+    this.sendMailUsingSMTP();
+  }
+}
+
+class PlainTextMail extends Mail {
+  public applyHeaders(): void {
+    this.contentTypeHeader = "text/plain";
+  }
+}
+
+class HTMLMail extends Mail {
+  public applyHeaders(): void {
+    this.contentTypeHeader = "text/plain";
+  }
+
+  public fillAddressFields(fields: Fields): void {
+    this.replyTo = fields.getReplyToValue();
+  }
+}
+```
+
+In this example, `sendMail` is a _template method_ that "fixes the steps for an algorithm or procedure", or in this case calling the methods to send an email. The subclasses override any methods that need specification, and a _template method_ is used to sequence the mailing steps in a single method.
+
+> The `fillAddressFields` method of `HTMLMail` is an example of _method overriding_, specifically a _hook_ where we are "hooking on an additional implementation" of the default `fillAddressFields` method of `Mail`. _Hook_ methods generally have empty method bodies, but not always.
+
+### Template Method Pattern Summary
+
+The _Template Method Pattern_ consists of a method in a superclass that executes a series of steps, or calls defined methods to complete an action. These defined methods are available for specification by subclasses through _method overriding_ and _hook methods_.
+
+## Singleton Pattern
+
+A _Singleton_ class is a class that produces only _one_ instance. Any subsequent constructor call returns the existing single instance. This is particularly useful in database connections and loggers.
+
+```ts
+class DatabaseConnection {
+  private static dbConn: DatabaseConnection;
+
+  private constructor() {
+    // ...
+  }
+
+  public static getDBConnection(): DatabaseConnection {
+    if (this.dbConn == undefined) {
+      this.dbConn = new DatabaseConnection();
+    }
+
+    return this.dbConn;
+  }
+}
+```
+
+The idea is that the `constructor` of the single class is listed as _private_, and a static variable and method are responsible for controlling the instantiation and providence of the singleton to the calling code base.
+
+### Disclaimer: Issues with Singletons
+
+A couple issues with singletons are:
+
+- multithreading issues
+- single-responsibility principle
+- bottle necking
+
+First, if your program is multithreaded, it could be possible that both threads instantiate an instance of the singleton, which defeats the purpose of having _one instance_.
+
+> This can be fixed by labeling the `getDBConnection` as `synchronized` in Java and related languages, or by instantiating the singleton when the class is created, rather than when the first `getDBConnection` is called.
+
+Second, having a singleton be responsible for it's on creation _and_ whatever else functionality it's responsible for violates the _single-responsibility principle_.
+
+Third, if a significant part of your application uses the singleton, there could come times when your code is becomes hung up.
+
+## Singleton Pattern Summary
+
+The _Singleton Pattern_ consists of a class that only produces a _single instance_. Singletons do not pollute the global namespace, permit lazy allocation and initialization, and "can be used as a basis for other design patterns, such as the abstract factory, factory method, builder and prototype patterns."
