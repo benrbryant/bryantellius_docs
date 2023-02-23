@@ -204,3 +204,79 @@ The _decorator pattern_ allows behavior to be added, or _decorated_, to an indiv
 
 ## Factory Pattern
 
+Example: Management Application Supporting Different Notes
+
+The issue at hand, is that we may support several different types of Notes (e.g. Rich Notes, Outline Notes, Simple Notes). However, calling the constructor of a single `Note` class cannot return a specific object instance of the type of note we want to create. This is where a _factory_ comes in.
+
+```ts
+abstract class Note {}
+
+class RichNote extends Note {}
+
+class OutlineNote extends Note {}
+
+class NoteFactory {
+  private type: string;
+
+  constructor(type: string) {
+    this.type = type;
+  }
+
+  public createNote() {
+    if (this.type == "Rich") {
+      return new RichNote();
+    } else if (this.type == "Outline") {
+      return new OutlineNote();
+    }
+  }
+}
+```
+
+In the above example code, there is a _Simple Factory_ implementation where a factory class has a `createNote` method that returns a specific type of note instance.
+
+The note classes are derived from a `Note` abstract class, which is abstract because, in this case, notes will specifically be of a specific type.
+
+### Simple Factory vs Factory Method
+
+Earlier is an example of a simple factory. There is a factory class that contains a method that returns the instance of a specific type of note.
+
+The Gang of Four authors of _Design Patterns_ in 1994 suggested the _factory method pattern_. See below:
+
+```ts
+abstract class Note {}
+
+class RichNote extends Note {}
+
+class OutlineNote extends Note {}
+
+abstract class NoteFactory {
+  title: string;
+
+  public abstract createNote(): Note;
+}
+
+class RichNoteFactory extends NoteFactory {
+  public createNote(): Note {
+    return new RichNote();
+  }
+}
+
+class OutlineNoteFactory extends NoteFactory {
+  public createNote(): Note {
+    return new OutlineNote();
+  }
+}
+```
+
+This difference here lies in the potential specializations that you can create by basing specific factories on an abstract factory class.
+
+### Factory Pattern Summary
+
+The _Factory Pattern_ "defines an interface for creating an object, but let's subclasses decide which class to instantiate." In other words, allowing subclasses to define how to instantiate objects by overriding a factory method used to created derived types.
+
+## Observer Pattern
+
+Example: Blog Entry Subscription
+
+The _Observer Pattern_ defines a "one-to-many dependency between objects", where each of its dependents can be notified of a change in its state. This pattern can fit into many examples where observer _subscribes_ to data or events.
+
