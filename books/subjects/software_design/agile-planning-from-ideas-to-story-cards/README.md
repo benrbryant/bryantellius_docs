@@ -19,3 +19,9 @@ The four values of agile are:
 
 Along with the four core values are [12 principles](http://agilemanifesto.org/principles.html).
 
+For example, number 7 states, "Working software is the primary measure of progress."
+
+The whole focus is to get to _working software_. Once there, you can obtain user feedback and continue the agile iterative process of prioritization of features, implementation, testing, releasing, and feedback.
+
+> The Pareto Law states when applied to software development states that 80% of users will only use 20% of features.
+
