@@ -283,7 +283,7 @@ This difference here lies in the potential specializations that you can create b
 
 ### Factory Pattern Summary
 
-The _Factory Pattern_ "defines an interface for creating an object, but let's subclasses decide which class to instantiate." In other words, allowing subclasses to define how to instantiate objects by overriding a factory method used to created derived types.
+The _Factory Pattern_ "defines an interface for creating an object, but let's subclasses decide which class to instantiate." In other words, allowing subclasses to define how to instantiate objects by overriding a factory method used to create derived types.
 
 ## Observer Pattern
 
