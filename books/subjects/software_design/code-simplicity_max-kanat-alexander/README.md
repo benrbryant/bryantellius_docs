@@ -2,7 +2,7 @@
 
 By Max Kanat-Alexander
 
-✅ [Source (PDF)](https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf)
+[Source (PDF)](https://www.codesimplicity.com/wp-content/uploads/2022/05/CodeSimplicity.pdf)
 
 ## Table of Contents
 

@@ -6,6 +6,21 @@ By Launch School
 
 ## Table of Contents
 
+- [What is Agile?](#what-is-agile)
+- [Business Cycle](#business-cycle)
+- [Planning Cycle](#planning-cycle)
+- [Sprint Cycle](#sprint-cycle)
+- [Release Cycle](#release-cycle)
+- [The Planning Process](#the-planning-process)
+- [To Do App Example](#to-do-app-example)
+    - [Application Concept](#application-concept)
+    - [Developing Personas](#developing-personas)
+    - [Writing Scenarios](#writing-scenarios)
+    - [Storyboarding and Wireframes](#storyboarding-and-wireframes)
+    - [Epics and Stories](#epics-and-stories)
+    - [Story Writing Workshops](#story-writing-workshops)
+    - [Product Backlog](#product-backlog)
+
 ## Notes
 
 ### What is Agile?
@@ -178,6 +193,24 @@ Furthering the conversation, Ron Jeffries developed the "The 3 C's:
 - Conversation: where the details of the card are discussed
 - Confirmation: acceptance tests based on the card and conversation
 
+_Acceptance tests_ are statements that define requirements for the software based on user stories. These can and generally are later implemented as automated tests.
+
+For example:
+
+```txt
+Given...
+When...
+Then...
+
+Given I am on the todo home page
+When I click the "New" button to add a task
+And I input a message to describe the task
+And I select a due date for the task
+And I click the "Save" button
+Then I should see a success alert notify me "Task Created"
+And my newly created task should be in "My Tasks" list on the home page
+```
+
 #### Story Writing Workshops
 
 Story writing workshops consist of product owners, designers, and developers collaborating on filling out the backlog of user stories. It should not be a one-time event to scope out the project in entirety.
@@ -220,7 +253,7 @@ When writing user stories, Bill Wake created a mnemonic for keeping on track:
 - Valuable: stories should be value; they should solve _real_ and _current_ user problems
 - Estimate: stories should be small and clear enough to estimate complexity
 - Scalable or Small: stories that are small and scalable are easier to estimate and change
-- Testable: stories that pass acceptance tests are can then easily be considered "done' 
+- Testable: stories that pass acceptance tests are can then easily be considered "done'
 
 #### Product Backlog
 
@@ -239,4 +272,3 @@ Along with user stories, the product backlog includes:
 - _bugs_: work related to a defect
 - _chores_: work, often technical, that has no direct business value (updating project dependencies, etc)
 - _spikes_: work that represents "proof of concepts"
-
