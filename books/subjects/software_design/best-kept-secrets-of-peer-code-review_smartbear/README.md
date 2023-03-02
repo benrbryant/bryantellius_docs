@@ -4,8 +4,6 @@ By SmartBear
 
 [Book Source](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
 
-Bookmark: pg 122
-
 ## Table of Contents
 
 ## Notes
