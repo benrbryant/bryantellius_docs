@@ -4,7 +4,7 @@ By SmartBear
 
 [Book Source](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
 
-Bookmark: pg 75
+Bookmark: pg 122
 
 ## Table of Contents
 
@@ -21,6 +21,8 @@ Peer code reviews offer:
 - more customer satisfaction
 - more maintainable code
 
+> Definition of a _defect_: When a reviewer or consensus of reviewers determines that code must be changed before it is acceptable, it is a "defect"
+
 ### Five Types of Review
 
 #### Formal Inspections
@@ -31,7 +33,7 @@ Formal inspections are _heavy-set_ reviews with a lot of resources dedicated to 
 
 #### Over-The-Shoulder Reviews
 
-Over-the-shoulder reviews are informal and interactive. They promote developer collaboration and interpersonal exchange. This involves an author showing review files to a reviewer, and explaining their changes. 
+Over-the-shoulder reviews are informal and interactive. They promote developer collaboration and interpersonal exchange. This involves an author showing review files to a reviewer, and explaining their changes.
 
 Due to their informal behavior, they often are the least effective in finding defects _and verifying fixed defects_.
 
@@ -55,7 +57,7 @@ Tool-assisted reviews offer the best of all worlds, just as a price (cash or dev
 
 Pair programming involves an author and reviewing implementing changes _together_, or rather the author makes the changes in from of the reviewer. This greatly reduces the amount of defects that make it into the code base, and promotes knowledge transfers. However, when the reviewer is that close to the changes, they often fail to catch some defects that they would otherwise notice as an objective post-changes reviewer.
 
-### Code Review Studies and Findings 
+### Code Review Studies and Findings
 
 Summarized findings from studies of heavyweight code review processes:
 
@@ -68,4 +70,54 @@ Summarized findings from studies of heavyweight code review processes:
 Although these findings are applicable, they ultimately are too small for true statistical significance.
 
 Summarized findings from studies of lightweight code review processes:
+
+- Review size should no larger than 400, closer to 200 is ideal
+- Review time should be between 30 and 60 minutes
+- Inspection Rate should be 300 LOC/hour or less for effective defect detection
+- Authors preparing, or _self-reviewing_, before a review significantly reduces defects
+- Defect Rates average to 15 defects/hour
+- Inspection Rate will vary depending on many factors
+
+### Social Effects of Peer Reviews
+
+Code Reviews play on the "Ego Effect".
+
+For good, developer egos promote self-improvement. When a developer notices their mistakes, or their mistakes are pointed out to them by a reviewer, they will strive to correct those mistakes from happening again.
+
+For bad, some developers will be hyper-sensitive to criticism and resistant to metrics collected during the review process.
+
+Mitigate the Ego Effect as managers and team leads by stressing the following points to the team:
+
+1. Hard code has more defects
+2. More time yields more defects
+3. It's all about the code
+4. The more _found_ defects, the better
+
+### Questions for a Review Process
+
+- What are the goals of the review?
+- How amenable are your developers to review?
+- How will you improve the process over time?
+- How will you collect metrics?
+- How will you manage negative emotions?
+- How will you develop the review checklist?
+
+### Measurement and Improvement
+
+Raw Measurements
+
+- Lines of Code (LOC)
+- Inspection Time
+- Defect Count
+
+Analytical Metrics
+
+- Inspection Rate: LOC/hour
+- Defect Rate: defects/hour
+- Defect Density: defects/kLOC (kLOC = 1000 LOC)
+
+Two takeaways from analytical metrics:
+
+1. Defect rates for a review are _task independent_
+2. The meaning of metrics depends on the _goal of the review_
 
