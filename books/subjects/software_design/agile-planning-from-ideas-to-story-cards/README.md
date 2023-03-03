@@ -13,13 +13,13 @@ By Launch School
 - [Release Cycle](#release-cycle)
 - [The Planning Process](#the-planning-process)
 - [To Do App Example](#to-do-app-example)
-    - [Application Concept](#application-concept)
-    - [Developing Personas](#developing-personas)
-    - [Writing Scenarios](#writing-scenarios)
-    - [Storyboarding and Wireframes](#storyboarding-and-wireframes)
-    - [Epics and Stories](#epics-and-stories)
-    - [Story Writing Workshops](#story-writing-workshops)
-    - [Product Backlog](#product-backlog)
+  - [Application Concept](#application-concept)
+  - [Developing Personas](#developing-personas)
+  - [Writing Scenarios](#writing-scenarios)
+  - [Storyboarding and Wireframes](#storyboarding-and-wireframes)
+  - [Epics and Stories](#epics-and-stories)
+  - [Story Writing Workshops](#story-writing-workshops)
+  - [Product Backlog](#product-backlog)
 
 ## Notes
 

@@ -6,6 +6,17 @@ By SmartBear
 
 ## Table of Contents
 
+- [Five Types of Review](#five-types-of-review)
+  - [Formal Inspections](#formal-inspections)
+  - [Over-the-shoulder Reviews](#over-the-shoulder-reviews)
+  - [Email Passaround Reviews](#email-pass-around-reviews)
+  - [Tool-assisted Reviews](#tool-assisted-reviews)
+  - [Pair Programming](#pair-programming)
+- [Code Review Studies and Findings](#code-review-studies-and-findings)
+- [Social Effects of Peer Reviews](#social-effects-of-peer-reviews)
+- [Questions for a Review Process](#questions-for-a-review-process)
+- [Measurement and Improvement](#measurement-and-improvement)
+
 ## Notes
 
 Peer code reviews offer:
@@ -118,4 +129,3 @@ Two takeaways from analytical metrics:
 
 1. Defect rates for a review are _task independent_
 2. The meaning of metrics depends on the _goal of the review_
-
