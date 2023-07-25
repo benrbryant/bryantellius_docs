@@ -8,7 +8,7 @@
 - ✅ [Code Simplicity: The Fundamentals of Software](https://www.codesimplicity.com/book.pdf) - Max Kanat-Alexander (PDF)
 - ✅ [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
 - ⚠️ [Reactive Microservices Architecture](https://www.lightbend.com/ebooks/reactive-microservices-architecture-design-principles-for-distributed-systems-oreilly) (email address _requested_)
-- ⚠️ [How to Design Programs]([http://www.htdp.org](https://htdp.org/2023-5-12/Book/index.html)
+- ⚠️ [How to Design Programs](https://htdp.org/2023-5-12/Book/index.html)
 - [Reactive Microsystems: The Evolution of Microservices at Scale](https://www.lightbend.com/ebooks/reactive-microsystems-evolution-of-microservices-scalability-oreilly) (email address _requested_)
 - [Building Secure & Reliable Systems](https://static.googleusercontent.com/media/landing.google.com/en//sre/static/pdf/Building_Secure_and_Reliable_Systems.pdf) - Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield (PDF)
 - [Data-Oriented Design](http://www.dataorienteddesign.com/dodmain/dodmain.html)
