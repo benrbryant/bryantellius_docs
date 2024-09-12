@@ -1,0 +1,36 @@
+# Chapter 3: Network Management
+
+- **Quality of Service (QoS)** defines metrics that are quantitative measures of how well a network is performing
+  - **Speed**, measured in **bits per second (bps)**
+  - **Availability**, percentage of time the network is available
+  - **Error Rates**, percentage of bits or packets lost or erroneous upon reception
+  - **Latency**, amount of network delay that is measured in **milliseconds (ms)**
+  - **Jitter**, average variability of arrival time, or latency
+- **Speed** is the rated standard the ISP specifies, **throughput** is the "realized" speed of the user
+- **Aggregate throughput** is the throughput available to all users connecting to an access point
+- **Individual throughput** is the individual slice of the aggregate throughput that is divided by all active users
+- **Multiplex** refers to combining traffic on a shared trunk link, as opposed to unshared access links
+  - multiplexed trunk links only need to be sized to the _average_ throughput of combined traffic
+- **Service Level Agreements (SLA)** are contracts specify performance guarantees, and penalty fulfillment
+  - performance guarantees measured in in percentages and worse case scenarios (e.g. no less than 100 Mbps, 99% of the time)
+  - providers and corporations usually negotiate SLAs, while individual consumers do not as it would be too expensive to do so
+- **Traffic Analysis** asks how much traffic must flow over each of the networks individual transmission links
+- **Transmission Sites** and **transmission links** is the relationship between locations (destinations) and physical links
+  - site/link pairs can be calculated by the formula N\*(N-1)/2 (e.g. N=10, `10(10-1)/2 == 45 site pairs`)
+  - **traffic tables** are used to calculate complex transmission rates between site pairs and links
+- **Redundant Transmission Links** ensure that if a links fails there can still be transmission between at least some sites that would not be able to communicate after failure
+- **Leased lines** are telephone lines that are leased to companies if their sites are far apart
+  - these lines come at standard transmission rates
+  - leased lines are point-to-point links
+  - line requirements are based on several year forecasts
+- **Momentary traffic peaks** occur over lines that cause a traffic to exceed a line's capacity
+  - coping mechanisms
+    - **adding more capacity** which is expensive, but requires little management
+    - **assigning traffic priority** which is standard now-a-days for switches and routers, but requires more oversight
+    - **Quality of Service (QoS)** guarantees that reserve capacity for certain traffic, but potentially wastes the reserved capacity if it is not used
+    - **Traffic Shaping** uses **access control lists** to whitelist certain traffic from applications, block traffic, or limit traffic
+- Network professionals use **network management programs** in centralized **network operation centers (NOCs)** to manage the traffic over their networks
+  - their purpose is to provide **visibility** by:
+    - allowing for data configuration, traffic and error feedback
+    - allowing change commands
+    - enabling alarms for detection
