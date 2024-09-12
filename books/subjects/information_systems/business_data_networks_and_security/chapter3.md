@@ -34,3 +34,4 @@
     - allowing for data configuration, traffic and error feedback
     - allowing change commands
     - enabling alarms for detection
+- **Ping**
