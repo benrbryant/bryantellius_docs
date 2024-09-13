@@ -34,4 +34,17 @@
     - allowing for data configuration, traffic and error feedback
     - allowing change commands
     - enabling alarms for detection
-- **Ping**
+- **Ping** is one of the oldest visibility tools
+  - measures **reachability** and **round-trip latency**
+- **Traceroute** is another visibility tool
+  - measures round-trip latency for route and each hop along the way
+- **Simple Network Management Protocol (SNMP)** manages the communication and data collection between network management programs and network devices
+  - **SNMP Agents** act as the "middle-man" between network administrators and **SNMP devices**
+  - **SNMP Get** and **SNMP Set** are commands administrators use to get information and set configuration on devices
+  - **SNMP Traps** are the alarms for error detection
+  - **Network Visualization Programs** pull data from SNMP **Management Information Bases** and displays meaningful information for adminstrators
+- **Switches** have two functions
+  - **Forwarding function**, forwarding packets/frames in and out
+  - **Control function**, policy-based control of which ports to use, routing on/off, etc
+- **Control agility** refers to the ability to make rapid policy-based configuration changes when needed
+- **Software Defined Networking** refers to **centralized control function** via a **SDN Server/Controller** which exposes **Application Programming Interfaces (APIs)** to SNMP application programs for interaction
