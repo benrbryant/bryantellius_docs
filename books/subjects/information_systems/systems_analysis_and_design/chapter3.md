@@ -1,0 +1,28 @@
+# Chapter 3: Managing System Projects
+
+- Task duration is measured in how many units it takes a person to complete a task, or **person-units**, depending on the unit of measurement used (e.g. days - **person-days**, hours - **person-hours**)
+- Duration can be calculated by estimating the following values and formula
+  - **best case (B)**, **probable case (P)**, and **worst case (W)**
+  - (B + 4P + W)/6
+  - Example: best estimate - 2 days, worst estimate - 10 days, probable estimate - 4 days
+  - (2 + 16 + 10)/6 = 4.66 days
+- Estimation is based on **project size**, **HR resources**, **experience with similar projects**, and **project constraints**
+- **Work Breakdown Structures (WBSs)** break down the work that needs to be down into tasks
+  - **task name**, **duration**, and **predecessor** are minimum fields
+  - follow **task patterns** that define the sequence to complete the tasks
+    - patterns include **dependent tasks**, **multiple successor tasks**, and **multiple predecessor tasks**
+- **Project Estimate Review Technique (PERT)**/**Critical Path Method (CPM)** represents project tasks with **task boxes**
+  - task boxes contain **task name**, **task id**, **start date**, **end date**, and **task duration**
+- The **critical path** is the sequence of tasks that, if delayed, will affect the completion date of the entire project
+- **Slack time** is the amount of time a task can be delayed without affecting the completion date of the entire project
+- **Structure walkthroughs**, or reviews, happen at different phases of the SDLC and are typically down technical peers
+- **Risks** are any events that could negatively impact a project
+- **Risk Management** is the process of identifying, monitoring, and mitigating risks to a project
+  - Develop a **risk management plan**
+  - Identify risks
+  - Analyze the risks
+    - **Qualitative analysis** includes probability and impact ratings
+    - **Quantitative analysis** includes actual impact to project scope, budge, timeline, etc
+  - Create a **risk response plan**
+  - Monitor risks
+- **Brook's Law** states that adding staff resources to a software project late in the process actually lengthens the project timeline
