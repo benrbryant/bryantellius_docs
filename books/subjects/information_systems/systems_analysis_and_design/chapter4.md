@@ -17,3 +17,28 @@
   - **Joint Application Development (JAD)**, produces excellent requirements models, but at a cost (personnel in availability in meetings costs money)
   - **Rapid Application Development (RAD)**, produces systems at reduced cost
   - **Agile methods**, produces systems iteratively
+- **Fact finding** involves collecting information for requirements
+- **Interviews** are a fact finding technique for collecting information from another person through prepared questions
+- **Informal structure** seek to define interpersonal relationships
+- Interview steps
+  - Determine the people to interview
+  - Establish objectives for the interview
+  - Develop interview questions
+  - Prepare for the interview
+  - Conduct the interview
+  - Document the interview
+  - Evaluate the interview
+- Interviews utilize **open-ended**, **closed-ended**, and **range-of-response** questions
+- Other helpful techniques
+  - **document review**
+  - **observation**
+  - **questionnaires**
+  - **brainstorming**
+  - **sampling**
+  - **research**
+- Requirements can be represented in several ways
+  - **natural language**
+  - **diagrams** (e.g. **functional decomposition diagrams**, **business process diagrams**, and **data flow diagrams**)
+  - **models**, created with **Universal Modeling Language (UML)** (e.g. **use case diagrams**, **sequence diagrams**)
+- Validation and Verification of requirements consist of the following
+  - validity, consistency, completeness, realism, verifiability, comprehensibility, traceability, and adaptability
