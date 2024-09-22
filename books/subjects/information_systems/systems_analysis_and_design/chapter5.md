@@ -1,0 +1,54 @@
+# Chapter 5: Data and Process Modelling
+
+- **Logical models** represent _what_ a system must do
+- **Physical models** represent _how_ a system will be constructed
+- **Data Flow Diagrams** are visual representations of how data moves through an information system
+  - **Gane and Sarson** symbols
+    - **process** - rounded squares or circles
+    - **data flow** - arrows
+    - **data stores** - skinny, horizontal rectangles
+    - **external entities** - squares with box shadow
+- **All processes must have an incoming data flow and an outgoing data flow**
+- **All data flows must have at least one process at either end**
+- **All data stores must be connected to a process with an incoming _and_ outgoing data flow**
+- Incorrect flows
+  - **spontaneous generation**
+  - **black holes**
+  - **gray holes**
+- **Context diagram** is the top-level view of the information system and shows the boundaries and scope
+  - defines **process 0**
+- **Diagram 0** defines the overview of the components that make up the overall system
+- Diagrams are decomposed enough when the processes reach **functional primitives** that cannot be further broken down
+- **Leveling and balancing** refers to drawing levels of more complex, details diagrams and keeping the input and output flows consistent
+- Process numbers are represented as decimal numbers that represent their number and sub numbers (e.g. 1.2.3 means 3rd sub process of the 1st process's 2nd process)
+- **Data Dictionaries** are central storehouses of information about a system
+- **Data element (field)** is the smallest piece of data with meaning within a system
+- **Data structures (records)** are records that are typically stored in a structured database and used within data stores and data flows
+  - made up of attributes
+    - **name or label**
+    - **alias**
+    - **type and length**
+    - **default value**
+    - **acceptable values**
+    - **source**
+    - **security**
+    - **responsible users**
+    - **additional comments**
+- Documentation of DFDs
+  - data flow
+    - **name**, **description**, **alternate name**, **origin**, **destination**, **record**, and **volume and frequency**
+  - data store
+    - **name**, **description**, **alterate name**, **attributes**, and **volume and frequency**
+  - process
+    - **name**, **description**, **process number**, and **process description**
+  - entities
+    - **name**, **description**, **alternate name**, and **input and output data flows**
+  - records
+    - **name**, **description**, **alternate name**, and **attributes**
+- **Process descriptions** document the details of functional primitives
+- **Modular Design** consists of three logical elements
+  - **sequence**
+  - **selection**
+  - **iteration (recursion)**
+- **Decision tables** are used to convey a complex set of conditions and outcomes
+- **Decision trees** are used to graphically convey decision tables
