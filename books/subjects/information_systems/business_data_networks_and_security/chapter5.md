@@ -13,3 +13,15 @@
   - **4 Pair Unshielded Twisted Pair (UTP)** cabling
     - 8 copper wire twisted into 4 pairs, transmitted in each direction simultaneously, called **parallel transmission**
   - **Optical** cabling
+    - sent via light or no light
+    - measured in **wavelengths** (length between peaks) and **amplitude** (power, i.e. brightness)
+    - three windows 850nm, 1310nm, 1550nm
+    - **Multimode** vs **singlemode** refer to how many angles, or **modes**, light is able to enter a fiber optic cable
+      - the smaller the cable the closer to singlemodal, although better for transmission, this is more expensive
+- **Link aggregation** refers to adding physical links, trunk links, between switches to _increase the speed_
+- Ethernet has many different _physical link layer_ standards, but only one major _data link layer_ standard, **802.3 MAC Layer Standard**
+- **Hierarchical Topology** refers to the hierarchy, or physical organization, that switched networks are designed in to avoid loops
+- **Rapid Spanning Tree Protocol (RSTP)** is the act of networks recognizing a problem in the network (i.e. loop) and closing problematic physical ports
+- **Virtual Local Area Networks (VLANs)** are virtualized network segregations that allow clusters of servers to communicate within their own network
+- **802.1X Port-Based Network Access Controll** is the standard that provides authentication before a user has access to communicate over a certain port
+- **802.1AE** requires switches to authenticate themselves before communicating with other switches, and communication is encrypted
