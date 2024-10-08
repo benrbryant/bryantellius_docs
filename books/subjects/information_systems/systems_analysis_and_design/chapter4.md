@@ -12,7 +12,7 @@
 - Challenges for requirements
   - **imprecision**, **agreement**, and **creep**
 - Other considerations
-  - **scalability**, **security**, and **Total Cost of Ownership (TOC)**
+  - **scalability**, **security**, and **Total Cost of Ownership (TCO)**
 - Team techniques (involving dev team, managers, stakeholders, sponsors, users, et al)
   - **Joint Application Development (JAD)**, produces excellent requirements models, but at a cost (personnel in availability in meetings costs money)
   - **Rapid Application Development (RAD)**, produces systems at reduced cost

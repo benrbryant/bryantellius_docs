@@ -15,7 +15,7 @@
   - task boxes contain **task name**, **task id**, **start date**, **end date**, and **task duration**
 - The **critical path** is the sequence of tasks that, if delayed, will affect the completion date of the entire project
 - **Slack time** is the amount of time a task can be delayed without affecting the completion date of the entire project
-- **Structure walkthroughs**, or reviews, happen at different phases of the SDLC and are typically down technical peers
+- **Structure walkthroughs**, or reviews, happen at different phases of the SDLC and are typically done by technical peers
 - **Risks** are any events that could negatively impact a project
 - **Risk Management** is the process of identifying, monitoring, and mitigating risks to a project
   - Develop a **risk management plan**
