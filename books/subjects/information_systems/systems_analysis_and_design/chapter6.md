@@ -1,0 +1,42 @@
+# Chapter 6: Object Modeling
+
+- **Object-oriented analysis (O-O)** identifies objects
+  - end product is an **object model**
+- **Objects** consist of **attributes** and **methods**
+  - can respond to **messages**
+- OO concepts
+  - **polymorphism**
+  - **encapsulation**
+  - **inheritance**
+  - **abstraction**
+  - **classes**
+    - **superclasses** and **subclasses**
+- **Use cases**
+  - use cases are **ovals**
+  - actors are **stick figures**
+  - associations are **blue arrows**
+  - use cases that use other use cases are **green arrows pointing _towards_ the used use case**
+  - use case descriptions include
+    - use case, actor, description of action, preconditions, postconditions, and assumptions
+- **Use case diagrams**
+  - display several actors and use cases that are related
+  - use case **system boundaries** are blue shaded rectangles that contain the use cases, with actors being outside
+- **Class diagrams** detail classes and relationships involved in a use case
+  - includes **cardinality** notation
+    - **0..\*** zero to many
+    - **0..1** zero to one
+    - **1** one
+    - **1..\*** 1 to many
+- **Sequence diagrams** are dynamic models of use cases that display classes, messages, and interactions during a time period
+    - classes are green rectangles
+    - lifelines are dotted lines
+    - messages are red arrows
+    - focuses are ovals surrounding portions of the lifeline
+- **State transition diagrams** show how state changes throughout objects
+    - states are rectangles
+    - shaded circle on the left is the beginning state
+    - open circle on the right is the finished state
+    - lines connect the state transitions
+- **Activity diagrams** are similar ot state transition diagrams, but shows activities taking place and their outcomes
+    - resembles horizontal flowchart
+    - arrows (preconditions/postconditions) flow into rectangles (activities)
