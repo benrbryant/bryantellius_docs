@@ -1,0 +1,40 @@
+# Chapter 6: Wireless LANs 1
+
+- **Wireless LANs (WLAN)** use radio for physical layer transmission
+- Radio transmission devices are called **transceivers**
+- Radio waves described by frequency
+    - **frequency** is the number of complete cycles per second
+    - measured in **hertz (Hz)**
+- Transceivers have **antennas** that transmit and receive radio waves
+    - **omnidirectional** or **dish** antennas
+- **Inverse Square Law** determines wireless communication attenuation
+    - refers to if distance is doubled, signal strength falls to a quarter of its original value
+- Types of wireless communication attenuation
+    - **Absorption**
+        - **Dead zone** increase with increased frequency
+        - **Multipath Interference** increase with increased frequency
+        - **Electromagnetic Interference**
+- **Frequency spectrum** refers to the range of all possible frequencies
+- **Service bands** refer to the subsets of frequencies dedicated to specific services
+    - e.g. FM radio is 87.5 MHz to 108.0 MHz
+    - divided into **channels** so that different signals can be sent in each channel
+    - **Signal bandwidth** is the result of subtracting the highest frequency by the lowest frequency
+        - as signals spread over a range of frequencies
+- **Broadband** channels have large bandwidths, meaning they can carry data quickly
+    - general rule is that if you want **N times the speed, you need N times the bandwidth**
+- Governments regulate **licensed service bands** (e.g. AM and FM radio), while **unlicensed service bands** are free to use, barring you accept the possibility of interference 
+- Access points that are adjacent and use the same channels will suffer **co-channel interference**
+- **Spread spectrum transmission** refers to using a wider channel bandwidth without increasing total energy
+- **Orthogonal Frequency Division Multiplexing (OFDM)** is a spread spectrum transmission method used most commonly to split and spread frame transmission, redundantly, between subsections of a channel to ensure messages get to their hosts reliably
+- WLANs use 802.11 frames
+- WLANs are made up of **access points** which have **service set IDs (SSID)**, or names
+- **Roaming** refers to keeping your connection to a network while passing through multiple different access points
+    - this is done by access points having the same SSIDs
+    - which must communication with each other on the 802.3 network, called **distribution system**
+- **Collisions** happen when hosts or their access points transmit frequencies at the same time, since they're on the same channel
+    - **media access control (MAC)**  methods govern when devices can transmit
+- Two main standards
+    - **802.11n**: 40Hz channels, 12 actual channels, 100 to 600 Mbps
+    - **802.11ac**: 80 or 160Hz channels,6 or 2 actual channels respectively, 433 Mbps to 6.9 Gbps
+- **Multiple Input/Multiple Output (MIMO)** involves spatial streams sent from antennas to increase transmission speeds
+- **Beamforming** focuses signal energy and transmission in one direction, increasing signal distance and allowing simultaneous communication with multiple devices through **multi user MIMO (MU-MIMO)**
