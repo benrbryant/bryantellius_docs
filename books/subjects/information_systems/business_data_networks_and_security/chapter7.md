@@ -1,0 +1,29 @@
+# Chapter 7: Wireless LANs 2
+
+- **802.11i** standards provides _link security_ between wireless host and access point
+    - uses **Confidentiality, Integrity, and Authentication (CIA)** cryptographic protection
+    - previous standard variations were
+        - **Wired Equivalent Privacy (WEP)** - deprecated
+        - **Wireless Protected Access (WAP)** - interim created by Wifi Alliance
+    - Wifi Alliance also calls 802.11i the **Wireless Protected Access 2 (WPA2)**
+    - 2 modes
+        - **802.1X**, enterprise mode, for companies, uses authentication server
+            - also called the 802.11i initial authentication mode
+            - involves the client host (supplicant), access point, and authentication server
+        - **Pre-Shared Key (PSK)**, personal mode, for individuals, uses shared passcode
+            - **pairwise session keys** shared for ongoing encrypted communication after initial authentication from pre-shared key
+            - limited by management of pre-shared keys
+                - shouldn't be shared with unauthorized persons
+                - passphrases should be at least 20 characters long to generate a strong 64 bit PSK
+- Two main types of attack
+    - **Rogue Access Point**
+    - **Evil Twin Access Point**, i.e. "man in the middle"
+- **Site surveys** and **site analysis software** are used to initially plan access point locations and test network coverage
+- Bluetooth is a big component of **Personal Area Networks (PAN)**
+    - standardized by the **Bluetooth Special Interest Group (SIG)**
+    - **classic enhanced data rate (EDR)**, **classic high speed (HS)** and **low energy** types
+    - one-to-one connections following a master-slave format
+    - uses **bluetooth profiles** to govern how devices share information
+- **Near Field Communication (NFC)** send and retract electromagnetic waves a few inches away from a device that can send an receive small amounts of data
+- **Wifi Direct (Wi-Di)** refers to wireless hosts communicating with each other directly
+- **Zigbee** and **Z-Wave** are network standards for creating ad-hoc wireless networks
