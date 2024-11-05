@@ -18,3 +18,11 @@
   - subnet masks have `1`s for the amount of bits that represent the network and subnet parts
   - e.g. `255.255.0.0` as a network mask is `11111111 11111111 00000000 00000000`
   - **prefix notation** shortens the decimal notation of `255.255.0.0` to `/16`
+- Router table steps
+  1. finding all row matches
+  2. selecting the best-match row
+     - selects based on **longest match** of bits in the mask
+     - if a tie occurs, the **metric column** is consulted (e.g. if cost, then lower cost; if speed, then higher speed)
+  3. sending the packet back out
+     - **interface** and **next-hop router** columns are used to send a packet out an interface to a specified router
+     - if the destination host in on the current subnet, then **local** is shown in the **next-hop router** column
